@@ -79,6 +79,7 @@ export default () => {
               x-component="Input"
             />
             <SchemaField.Void x-component="ArrayCards.Remove" />
+            <SchemaField.Void x-component="ArrayCards.Copy" />
             <SchemaField.Void x-component="ArrayCards.MoveUp" />
             <SchemaField.Void x-component="ArrayCards.MoveDown" />
           </SchemaField.Object>
@@ -149,6 +150,10 @@ const schema = {
             type: 'void',
             'x-component': 'ArrayCards.Remove',
           },
+          copy: {
+            type: 'void',
+            'x-component': 'ArrayCards.Copy',
+          },
           moveUp: {
             type: 'void',
             'x-component': 'ArrayCards.MoveUp',
@@ -192,6 +197,10 @@ const schema = {
           remove: {
             type: 'void',
             'x-component': 'ArrayCards.Remove',
+          },
+          copy: {
+            type: 'void',
+            'x-component': 'ArrayCards.Copy',
           },
           moveUp: {
             type: 'void',
@@ -309,6 +318,7 @@ export default () => {
               x-component="Input"
             />
             <SchemaField.Void x-component="ArrayCards.Remove" />
+            <SchemaField.Void x-component="ArrayCards.Copy" />
             <SchemaField.Void x-component="ArrayCards.MoveUp" />
             <SchemaField.Void x-component="ArrayCards.MoveDown" />
           </SchemaField.Object>
@@ -401,6 +411,10 @@ const schema = {
           remove: {
             type: 'void',
             'x-component': 'ArrayCards.Remove',
+          },
+          copy: {
+            type: 'void',
+            'x-component': 'ArrayCards.Copy',
           },
           moveUp: {
             type: 'void',

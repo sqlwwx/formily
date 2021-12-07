@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card, Empty } from 'antd'
 import { CardProps } from 'antd/lib/card'
+import { IGridOptions } from '@formily/grid'
 import { ArrayField } from '@formily/core'
 import {
   useField,
@@ -12,8 +13,15 @@ import cls from 'classnames'
 import { ISchema } from '@formily/json-schema'
 import { usePrefixCls } from '../__builtins__'
 import { ArrayBase, ArrayBaseMixins } from '../array-base'
+import FormGrid from '../form-grid'
 
-type ComposedArrayCards = React.FC<CardProps> & ArrayBaseMixins
+const { GridColumn } = FormGrid
+
+interface ArrayCardsProps extends CardProps {
+  grid?: IGridOptions
+}
+
+type ComposedArrayCards = React.FC<ArrayCardsProps> & ArrayBaseMixins
 
 const isAdditionComponent = (schema: ISchema) => {
   return schema['x-component']?.indexOf('Addition') > -1
@@ -103,15 +111,17 @@ export const ArrayCards: ComposedArrayCards = observer((props) => {
       )
       return (
         <ArrayBase.Item key={index} index={index} record={item}>
-          <Card
-            {...props}
-            onChange={() => {}}
-            className={cls(`${prefixCls}-item`, props.className)}
-            title={title}
-            extra={extra}
-          >
-            {content}
-          </Card>
+          <GridColumn>
+            <Card
+              {...props}
+              onChange={() => {}}
+              className={cls(`${prefixCls}-item`, props.className)}
+              title={title}
+              extra={extra}
+            >
+              {content}
+            </Card>
+          </GridColumn>
         </ArrayBase.Item>
       )
     })
@@ -143,7 +153,9 @@ export const ArrayCards: ComposedArrayCards = observer((props) => {
   return (
     <ArrayBase>
       {renderEmpty()}
-      {renderItems()}
+      <FormGrid {...(props.grid || { maxColumns: 1 })}>
+        {renderItems()}
+      </FormGrid>
       {renderAddition()}
     </ArrayBase>
   )

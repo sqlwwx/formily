@@ -179,6 +179,10 @@ const schema = {
       'x-decorator': 'FormItem',
       'x-component-props': {
         title: '对象数组',
+        grid: {
+          minWidth: 500,
+          maxWidth: 600,
+        },
       },
       items: {
         type: 'object',

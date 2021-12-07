@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/__builtins__/configs/index.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,IAAM,WAAW,GAAG,iBAAiB,CAAA","sourcesContent":["export const stylePrefix = 'formily-element'\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"style.js","sourceRoot":"","sources":["../../src/form/style.ts"],"names":[],"mappings":"AAAA,KAAK;AACL,OAAO,uBAAuB,CAAA;AAC9B,OAAO,sBAAsB,CAAA","sourcesContent":["// 依赖\nimport '../preview-text/style'\nimport '../form-layout/style'\n"]}

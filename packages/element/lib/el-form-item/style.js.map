@@ -1,0 +1,1 @@
+{"version":3,"file":"style.js","sourceRoot":"","sources":["../../src/el-form-item/style.ts"],"names":[],"mappings":";;AAAA,8DAA2D","sourcesContent":["import 'element-ui/packages/theme-chalk/src/form-item.scss'\n"]}

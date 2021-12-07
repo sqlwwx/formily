@@ -1,0 +1,1 @@
+{"version":3,"file":"style.js","sourceRoot":"","sources":["../../src/switch/style.ts"],"names":[],"mappings":";;AAAA,2DAAwD","sourcesContent":["import 'element-ui/packages/theme-chalk/src/switch.scss'\n"]}

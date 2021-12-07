@@ -1,0 +1,1 @@
+{"version":3,"file":"style.js","sourceRoot":"","sources":["../../src/form-dialog/style.ts"],"names":[],"mappings":";;AAAA,2DAAwD;AACxD,2DAAwD;AACxD,4DAAyD","sourcesContent":["import 'element-ui/packages/theme-chalk/src/dialog.scss'\nimport 'element-ui/packages/theme-chalk/src/button.scss'\nimport 'element-ui/packages/theme-chalk/src/loading.scss'\n"]}

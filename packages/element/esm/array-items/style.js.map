@@ -1,0 +1,1 @@
+{"version":3,"file":"style.js","sourceRoot":"","sources":["../../src/array-items/style.ts"],"names":[],"mappings":"AAAA,OAAO,cAAc,CAAA;AAErB,KAAK;AACL,OAAO,qBAAqB,CAAA","sourcesContent":["import './style.scss'\n\n// 依赖\nimport '../array-base/style'\n"]}

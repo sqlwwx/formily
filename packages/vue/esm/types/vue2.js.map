@@ -1,0 +1,1 @@
+{"version":3,"file":"vue2.js","sourceRoot":"","sources":["../../src/types/vue2.ts"],"names":[],"mappings":"","sourcesContent":["import type { Component, ComponentOptions } from '@type-helper/vue2'\nexport type Vue2ComponentOptions = ComponentOptions<never>\nexport type Vue2Component<Props = Record<string, any>> = Component<\n  any,\n  any,\n  any,\n  Props\n>\n"]}

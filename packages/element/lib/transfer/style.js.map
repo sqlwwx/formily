@@ -1,0 +1,1 @@
+{"version":3,"file":"style.js","sourceRoot":"","sources":["../../src/transfer/style.ts"],"names":[],"mappings":";;AAAA,6DAA0D","sourcesContent":["import 'element-ui/packages/theme-chalk/src/transfer.scss'\n"]}

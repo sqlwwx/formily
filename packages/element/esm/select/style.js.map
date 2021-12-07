@@ -1,0 +1,1 @@
+{"version":3,"file":"style.js","sourceRoot":"","sources":["../../src/select/style.ts"],"names":[],"mappings":"AAAA,OAAO,iDAAiD,CAAA;AAExD,KAAK;AACL,OAAO,uBAAuB,CAAA","sourcesContent":["import 'element-ui/packages/theme-chalk/src/select.scss'\n\n// 依赖\nimport '../preview-text/style'\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"types.js","sourceRoot":"","sources":["../../../src/__builtins__/shared/types.ts"],"names":[],"mappings":"","sourcesContent":["import { Component, VNode } from 'vue'\n\nexport type SlotTypes =\n  | Component\n  | string\n  | number\n  | ((props: Record<string, any>) => VNode[] | VNode)\n  | VNode\n"]}

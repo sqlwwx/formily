@@ -85,10 +85,11 @@ const StatusSelect: React.FC<IStatusSelectProps> = observer((props) => {
   }
 
   const options = props.options?.map(({ label, value }) => {
+    const val = Number(value)
     const hasError = errors.some(({ address }) => {
       const currentIndex = parseIndex(address)
-      const startIndex = (value - 1) * props.pageSize
-      const endIndex = value * props.pageSize
+      const startIndex = (val - 1) * props.pageSize
+      const endIndex = val * props.pageSize
       return currentIndex >= startIndex && currentIndex <= endIndex
     })
     return {
@@ -287,6 +288,7 @@ export const ArrayCards: ComposedArrayCards = observer((props) => {
           onChange={() => {}}
           className={cls(`${prefixCls}-item`, props.className)}
           title={props.title || field.title}
+          style={{ width: '100%' }}
         >
           <Empty />
         </Card>
@@ -301,6 +303,7 @@ export const ArrayCards: ComposedArrayCards = observer((props) => {
             onMoveDown={onMoveDown}
           >
             {renderEmpty()}
+            <div style={{ marginTop: 5, marginBottom: 5 }}>{pager}</div>
             <FormGrid {...(props.grid || { maxColumns: 1 })}>
               {renderItems(ds, startIndex)}
             </FormGrid>

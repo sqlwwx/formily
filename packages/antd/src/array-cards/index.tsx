@@ -172,7 +172,8 @@ const ArrayCardsPagination = (props) => {
     <Fragment>
       {props.children?.(
         dataSource?.slice(startIndex, endIndex + 1),
-        renderPagination()
+        renderPagination(),
+        startIndex
       )}
     </Fragment>
   )
@@ -188,13 +189,9 @@ export const ArrayCards: ComposedArrayCards = observer((props) => {
 
   if (!schema) throw new Error('can not found schema object')
 
-  const defaultRowKey = (record: any) => {
-    return dataSource.indexOf(record)
-  }
-
-  const renderItems = (dataSource) => {
-    return dataSource?.map((item) => {
-      const index = defaultRowKey(item)
+  const renderItems = (dataSource, startIndex) => {
+    return dataSource?.map((item, i) => {
+      const index = i + startIndex
       const items = Array.isArray(schema.items)
         ? schema.items[index] || schema.items[0]
         : schema.items
@@ -295,7 +292,7 @@ export const ArrayCards: ComposedArrayCards = observer((props) => {
         </Card>
       )}
       <ArrayCardsPagination {...pagination} dataSource={dataSource}>
-        {(ds, pager) => (
+        {(ds, pager, startIndex) => (
           <ArrayBase
             onAdd={onAdd}
             onCopy={onCopy}
@@ -305,7 +302,7 @@ export const ArrayCards: ComposedArrayCards = observer((props) => {
           >
             {renderEmpty()}
             <FormGrid {...(props.grid || { maxColumns: 1 })}>
-              {renderItems(ds)}
+              {renderItems(ds, startIndex)}
             </FormGrid>
             <div style={{ marginTop: 5, marginBottom: 5 }}>{pager}</div>
             {renderAddition()}

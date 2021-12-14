@@ -23,6 +23,7 @@ export interface IFormStep {
   submit: Form['submit']
   next(): void
   back(): void
+  goTo(key: number): void
 }
 
 export interface IFormStepProps extends StepsProps {
@@ -99,6 +100,13 @@ const createFormStep = (defaultCurrent = 0): IFormStep => {
     }
   })
 
+  const goTo = action.bound((step) => {
+    if (step >= 0 && step < formStep.current) {
+      setDisplay(step)
+      formStep.setCurrent(step)
+    }
+  })
+
   const formStep: IFormStep = model({
     connect(steps, field) {
       env.steps = steps
@@ -127,6 +135,9 @@ const createFormStep = (defaultCurrent = 0): IFormStep => {
     async back() {
       back()
     },
+    async goTo(key: number) {
+      goTo(key)
+    },
     async submit(onSubmit) {
       return env.form?.submit?.(onSubmit)
     },
@@ -148,10 +159,20 @@ export const FormStep = connect(
           {...props}
           style={{ marginBottom: 10, ...props.style }}
           current={current}
+          onChange={(changeCurrent) => {
+            if (props?.onChange) {
+              return props.onChange(changeCurrent)
+            }
+            if (changeCurrent > current) {
+              formStep.next()
+            } else {
+              formStep.goTo(changeCurrent)
+            }
+          }}
         >
-          {steps.map(({ props }, key) => {
-            return <Steps.Step {...props} key={key} />
-          })}
+          {steps.map(({ props }, index) => (
+            <Steps.Step {...props} key={index} disabled={index - 1 > current} />
+          ))}
         </Steps>
         {steps.map(({ name, schema }, key) => {
           if (key !== current) return

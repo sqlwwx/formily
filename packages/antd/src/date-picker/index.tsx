@@ -1,12 +1,50 @@
 import moment from 'moment'
 import { connect, mapProps, mapReadPretty } from '@formily/react'
+import { isArr } from '@formily/shared'
 import { DatePicker as AntdDatePicker } from 'antd'
 import {
   DatePickerProps as AntdDatePickerProps,
   RangePickerProps,
 } from 'antd/lib/date-picker'
 import { PreviewText } from '../preview-text'
-import { formatMomentValue, momentable } from '../__builtins__'
+
+const momentable = (value: any) => {
+  if (isArr(value)) {
+    return value.map((val) => moment(val))
+  }
+  return value ? moment(value) : undefined
+}
+
+const formatDate = (date: any, picker: any, i = 0) => {
+  if (!date) {
+    return date
+  }
+  if (!picker) {
+    return date.valueOf()
+  }
+  let _picker = picker
+  if (isArr(picker)) {
+    _picker = picker[i]
+  }
+  if (!_picker) {
+    return date.valueOf()
+  }
+  if (i === 1) {
+    return date.endOf(_picker).valueOf()
+  }
+  return date.startOf(_picker).valueOf()
+}
+
+const formatMomentValue = (value: any, picker: any): number | number[] => {
+  if (isArr(value)) {
+    return [
+      formatDate(value[0], picker, 0),
+      formatDate(value[1], picker, 1),
+    ].filter((v) => v)
+  } else {
+    return formatDate(value, picker)
+  }
+}
 
 type DatePickerProps<PickerProps> = Exclude<
   PickerProps,
@@ -36,15 +74,16 @@ const mapDateFormat = function () {
     return props['showTime'] ? 'YYYY-MM-DD HH:mm:ss' : 'YYYY-MM-DD'
   }
   return (props: any) => {
-    const format = props['format'] || getDefaultFormat(props)
+    const picker = props.picker || (props.showTime ? '' : 'day')
+    const format = getDefaultFormat(props)
     const onChange = props.onChange
     return {
       ...props,
       format: format,
-      value: momentable(props.value, format === 'gggg-wo' ? 'gggg-ww' : format),
+      value: momentable(props.value),
       onChange: (value: moment.Moment | moment.Moment[]) => {
         if (onChange) {
-          onChange(formatMomentValue(value, format))
+          onChange(formatMomentValue(value, picker))
         }
       },
     }

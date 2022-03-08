@@ -159,8 +159,101 @@ export default () => {
 }
 ```
 
+## JSON Schema copy 案例
+
+```tsx
+import React from 'react'
+import {
+  FormItem,
+  Input,
+  ArrayTabs,
+  FormButtonGroup,
+  Submit,
+} from '@formily/antd'
+import { createForm } from '@formily/core'
+import { FormProvider, createSchemaField } from '@formily/react'
+
+const SchemaField = createSchemaField({
+  components: {
+    FormItem,
+    Input,
+    ArrayTabs,
+  },
+})
+
+const form = createForm()
+
+const schema = {
+  type: 'object',
+  properties: {
+    string_array: {
+      type: 'array',
+      title: '字符串数组',
+      'x-decorator': 'FormItem',
+      maxItems: 3,
+      'x-component-props': {
+        copy: true,
+      },
+      'x-component': 'ArrayTabs',
+      items: {
+        type: 'string',
+        'x-decorator': 'FormItem',
+        required: true,
+        'x-component': 'Input',
+      },
+    },
+    array: {
+      type: 'array',
+      title: '对象数组',
+      'x-decorator': 'FormItem',
+      maxItems: 3,
+      'x-component': 'ArrayTabs',
+      'x-component-props': {
+        copy: true,
+      },
+      items: {
+        type: 'object',
+        properties: {
+          aaa: {
+            type: 'string',
+            'x-decorator': 'FormItem',
+            title: 'AAA',
+            required: true,
+            'x-component': 'Input',
+          },
+          bbb: {
+            type: 'string',
+            'x-decorator': 'FormItem',
+            title: 'BBB',
+            required: true,
+            'x-component': 'Input',
+          },
+        },
+      },
+    },
+  },
+}
+
+export default () => {
+  return (
+    <FormProvider form={form}>
+      <SchemaField schema={schema} />
+      <FormButtonGroup>
+        <Submit onSubmit={console.log}>提交</Submit>
+      </FormButtonGroup>
+    </FormProvider>
+  )
+}
+```
+
 ## API
 
 ### ArrayTabs
 
 参考 https://ant.design/components/tabs-cn/
+
+扩展属性
+
+| 属性名 | 类型    | 描述                   | 默认值 |
+| ------ | ------- | ---------------------- | ------ |
+| copy   | boolean | 添加时是否复制当前数据 | false  |

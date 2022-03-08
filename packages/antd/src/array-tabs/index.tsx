@@ -9,6 +9,10 @@ import {
   ReactFC,
 } from '@formily/react'
 import { TabsProps } from 'antd/lib/tabs'
+import { clone } from '@formily/shared'
+export interface ArrayTabsProps extends TabsProps {
+  copy?: boolean
+}
 
 interface IFeedbackBadgeProps {
   index: number
@@ -37,8 +41,9 @@ const FeedbackBadge: ReactFC<IFeedbackBadgeProps> = observer(
   }
 )
 
-export const ArrayTabs: React.FC<React.PropsWithChildren<TabsProps>> = observer(
+export const ArrayTabs: React.FC<React.PropsWithChildren<ArrayTabsProps>> = observer(
   (props) => {
+    const { copy, ...tabsProps } = props
     const field = useField<ArrayField>()
     const schema = useFieldSchema()
     const [activeKey, setActiveKey] = useState('tab-0')
@@ -47,6 +52,11 @@ export const ArrayTabs: React.FC<React.PropsWithChildren<TabsProps>> = observer(
     const onEdit = (targetKey: any, type: 'add' | 'remove') => {
       if (type == 'add') {
         const id = dataSource.length
+        if (copy) {
+          field.push(clone(field.value[activeKey.slice(4)]))
+          setActiveKey(`tab-${id}`)
+          return
+        }
         if (field?.value?.length) {
           field.push(null)
         } else {
@@ -63,7 +73,7 @@ export const ArrayTabs: React.FC<React.PropsWithChildren<TabsProps>> = observer(
     }
     return (
       <Tabs
-        {...props}
+        {...tabsProps}
         activeKey={activeKey}
         onChange={(key) => {
           setActiveKey(key)

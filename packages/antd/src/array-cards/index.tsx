@@ -1,4 +1,10 @@
-import React, { Fragment, useState, useEffect } from 'react'
+import React, {
+  Fragment,
+  useState,
+  useEffect,
+  createContext,
+  useContext,
+} from 'react'
 import { Card, Empty, Pagination, Space, Select, Badge } from 'antd'
 import { CardProps } from 'antd/lib/card'
 import { IGridOptions } from '@formily/grid'
@@ -10,7 +16,7 @@ import {
   useFieldSchema,
   RecursionField,
 } from '@formily/react'
-import { isBool } from '@formily/shared'
+import { isBool, isFn } from '@formily/shared'
 import cls from 'classnames'
 import { ISchema } from '@formily/json-schema'
 import { SelectProps } from 'antd/lib/select'
@@ -33,6 +39,12 @@ type ComposedArrayCards = React.FC<
   React.PropsWithChildren<ArrayCardsProps & IArrayBaseProps>
 > &
   ArrayBaseMixins
+
+interface PaginationAction {
+  totalPage?: number
+  pageSize?: number
+  changePage?: (page: number) => void
+}
 
 const isAdditionComponent = (schema: ISchema) => {
   return schema['x-component']?.indexOf('Addition') > -1
@@ -116,6 +128,11 @@ const StatusSelect: React.FC<IStatusSelectProps> = observer((props) => {
   )
 })
 
+const PaginationContext = createContext<PaginationAction>({})
+const usePagination = () => {
+  return useContext(PaginationContext)
+}
+
 const ArrayCardsPagination = (props) => {
   const [current, setCurrent] = useState(1)
   const prefixCls = usePrefixCls('formily-array-cards')
@@ -171,11 +188,15 @@ const ArrayCardsPagination = (props) => {
 
   return (
     <Fragment>
-      {props.children?.(
-        dataSource?.slice(startIndex, endIndex + 1),
-        renderPagination(),
-        startIndex
-      )}
+      <PaginationContext.Provider
+        value={{ totalPage, pageSize, changePage: handleChange }}
+      >
+        {props.children?.(
+          dataSource?.slice(startIndex, endIndex + 1),
+          renderPagination(),
+          startIndex
+        )}
+      </PaginationContext.Provider>
     </Fragment>
   )
 }
@@ -319,5 +340,43 @@ export const ArrayCards: ComposedArrayCards = observer((props) => {
 ArrayCards.displayName = 'ArrayCards'
 
 ArrayBase.mixin(ArrayCards)
+
+const Addition: ArrayBaseMixins['Addition'] = (props) => {
+  const array = ArrayBase.useArray()
+  const { totalPage = 0, pageSize = 10, changePage } = usePagination()
+  return (
+    <ArrayBase.Addition
+      {...props}
+      onClick={(e) => {
+        // 如果添加数据后将超过当前页，则自动切换到下一页
+        const total = array?.field?.value.length || 0
+        if (total === totalPage * pageSize + 1 && isFn(changePage)) {
+          changePage(totalPage + 1)
+        }
+        props.onClick?.(e)
+      }}
+    />
+  )
+}
+
+const Copy: ArrayBaseMixins['Copy'] = (props) => {
+  const { totalPage = 0, pageSize = 10, changePage } = usePagination()
+  const index = ArrayCards.useIndex(props.index)
+  return (
+    <ArrayBase.Copy
+      {...props}
+      onClick={(e) => {
+        // 如果复制的数据为当前页的最后一个, 则自动切换到下一页
+        if (index % pageSize === pageSize - 1 && isFn(changePage)) {
+          changePage(totalPage + 1)
+        }
+        props.onClick?.(e)
+      }}
+    />
+  )
+}
+
+ArrayCards.Addition = Addition
+ArrayCards.Copy = Copy
 
 export default ArrayCards

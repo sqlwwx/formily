@@ -60,6 +60,11 @@ export default () => {
             <SchemaField.Void
               x-decorator="FormItem"
               x-component="ArrayItems.Remove"
+              x-component-props={{
+                onRemove: (index, data) => {
+                  console.log('onRemove', index, data)
+                },
+              }}
             />
             <SchemaField.Void
               x-decorator="FormItem"
@@ -768,9 +773,10 @@ export default () => {
 
 > 删除按钮
 
-| 属性名 | 类型      | 描述 | 默认值 |
-| ------ | --------- | ---- | ------ |
-| title  | ReactText | 文案 |        |
+| 属性名   | 类型                               | 描述     | 默认值 |
+| -------- | ---------------------------------- | -------- | ------ |
+| title    | ReactText                          | 文案     |        |
+| onRemove | (index: number, data: any) => void | 删除事件 | -      |
 
 其余参考 https://ant.design/components/icon-cn/
 

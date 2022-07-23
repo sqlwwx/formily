@@ -43,7 +43,7 @@ export type ArrayBaseMixins = {
     React.PropsWithChildren<IArrayBaseOperationProps & { index?: number }>
   >
   Remove?: React.FC<
-    React.PropsWithChildren<IArrayBaseOperationProps & { index?: number }>
+    React.PropsWithChildren<IArrayBaseOperationProps & { index?: number, onRemove?: (index: number, data: any) => void }>
   >
   MoveUp?: React.FC<
     React.PropsWithChildren<IArrayBaseOperationProps & { index?: number }>
@@ -231,7 +231,7 @@ ArrayBase.Copy = React.forwardRef((props, ref) => {
   )
 })
 
-ArrayBase.Remove = React.forwardRef((props, ref) => {
+ArrayBase.Remove = React.forwardRef(({ onRemove, ...props }, ref) => {
   const index = useIndex(props.index)
   const self = useField()
   const array = useArray()
@@ -252,6 +252,7 @@ ArrayBase.Remove = React.forwardRef((props, ref) => {
       onClick={(e) => {
         if (self?.disabled) return
         e.stopPropagation()
+        onRemove?.(index, array.field.value[index])
         array.field?.remove?.(index)
         array.props?.onRemove?.(index)
         if (props.onClick) {

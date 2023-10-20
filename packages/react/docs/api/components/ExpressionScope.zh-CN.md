@@ -21,12 +21,12 @@ type ExpressionScope = React.FC<React.PropsWithChildren<IExpressionScopeProps>>
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
+import { createForm } from '@formily-x/core'
 import {
   FormProvider,
   createSchemaField,
   ExpressionScope,
-} from '@formily/react'
+} from '@formily-x/react'
 import { Input } from 'antd'
 
 const form = createForm()

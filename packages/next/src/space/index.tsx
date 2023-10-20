@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@alifd/next'
-import { isNumberLike } from '@formily/shared'
+import { isNumberLike } from '@formily-x/shared'
 import { toArray, usePrefixCls } from '../__builtins__'
 import { useFormLayout } from '../form-layout'
 export interface ISpaceProps {

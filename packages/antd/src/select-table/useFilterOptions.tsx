@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { isFn, isArr } from '@formily/shared'
+import { isFn, isArr } from '@formily-x/shared'
 
 type IFilterOption = boolean | ((option: any, keyword: string) => boolean)
 

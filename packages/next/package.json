@@ -1,5 +1,5 @@
 {
-  "name": "@formily/next",
+  "name": "@formily-x/next",
   "version": "2.2.30",
   "license": "MIT",
   "main": "lib",
@@ -59,13 +59,13 @@
     "dumi": "^1.1.0-rc.8"
   },
   "dependencies": {
-    "@formily/core": "2.2.30",
-    "@formily/grid": "2.2.30",
-    "@formily/json-schema": "2.2.30",
-    "@formily/react": "2.2.30",
-    "@formily/reactive": "2.2.30",
-    "@formily/reactive-react": "2.2.30",
-    "@formily/shared": "2.2.30",
+    "@formily-x/core": "2.2.30",
+    "@formily-x/grid": "2.2.30",
+    "@formily-x/json-schema": "2.2.30",
+    "@formily-x/react": "2.2.30",
+    "@formily-x/reactive": "2.2.30",
+    "@formily-x/reactive-react": "2.2.30",
+    "@formily-x/shared": "2.2.30",
     "classnames": "^2.2.6",
     "react-sortable-hoc": "^1.11.0",
     "react-sticky-box": "^0.9.3"

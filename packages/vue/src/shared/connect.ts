@@ -1,7 +1,7 @@
 import { isVue2, markRaw, defineComponent, getCurrentInstance } from 'vue-demi'
-import { isFn, isStr, FormPath, each, isValid } from '@formily/shared'
-import { isVoidField, GeneralField } from '@formily/core'
-import { observer } from '@formily/reactive-vue'
+import { isFn, isStr, FormPath, each, isValid } from '@formily-x/shared'
+import { isVoidField, GeneralField } from '@formily-x/core'
+import { observer } from '@formily-x/reactive-vue'
 
 import { useField } from '../hooks/useField'
 import h from './h'

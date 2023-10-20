@@ -7,7 +7,7 @@
 ## 签名
 
 ```ts
-import { Field, GeneralField } from '@formily/core'
+import { Field, GeneralField } from '@formily-x/core'
 
 type IStateMapper<Props> =
   | {

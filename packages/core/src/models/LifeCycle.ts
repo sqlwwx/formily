@@ -1,4 +1,4 @@
-import { isFn, isStr, each } from '@formily/shared'
+import { isFn, isStr, each } from '@formily-x/shared'
 import { LifeCycleHandler, LifeCyclePayload } from '../types'
 
 type LifeCycleParams<Payload> = Array<

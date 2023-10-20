@@ -4,7 +4,7 @@ order: 0
 
 # Form
 
-调用[createForm](/zh-CN/api/entry/create-form)所返回的核心[表单模型](/zh-CN/guide/form) API，以下会列出所有模型属性，如果该属性是可写的，那么我们可以直接引用是修改该属性，@formily/reactive 便会响应从而触发 UI 更新。
+调用[createForm](/zh-CN/api/entry/create-form)所返回的核心[表单模型](/zh-CN/guide/form) API，以下会列出所有模型属性，如果该属性是可写的，那么我们可以直接引用是修改该属性，@formily-x/reactive 便会响应从而触发 UI 更新。
 
 ## 属性
 

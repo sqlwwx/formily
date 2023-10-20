@@ -31,9 +31,9 @@
 </template>
 
 <script>
-import { createForm } from '@formily/core'
-import { FormProvider, Field } from '@formily/vue'
-import { FormLayout, FormItem, Input, Select } from '@formily/element'
+import { createForm } from '@formily-x/core'
+import { FormProvider, Field } from '@formily-x/vue'
+import { FormLayout, FormItem, Input, Select } from '@formily-x/element'
 
 export default {
   components: { FormProvider, Field, FormLayout },

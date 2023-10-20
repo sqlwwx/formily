@@ -1,14 +1,14 @@
 import React, { Fragment, useState, useEffect } from 'react'
 import { Badge, Card, Collapse } from '@alifd/next'
-import { ArrayField } from '@formily/core'
+import { ArrayField } from '@formily-x/core'
 import {
   RecursionField,
   useField,
   useFieldSchema,
   observer,
   ISchema,
-} from '@formily/react'
-import { toArr } from '@formily/shared'
+} from '@formily-x/react'
+import { toArr } from '@formily-x/shared'
 import cls from 'classnames'
 import ArrayBase, { ArrayBaseMixins, IArrayBaseProps } from '../array-base'
 import { usePrefixCls, Empty } from '../__builtins__'

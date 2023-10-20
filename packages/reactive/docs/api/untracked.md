@@ -15,7 +15,7 @@ interface untracked<T extends () => any> {
 ## Example
 
 ```ts
-import { observable, autorun, untracked } from '@formily/reactive'
+import { observable, autorun, untracked } from '@formily-x/reactive'
 
 const obs = observable({
   aa: 11,

@@ -1,4 +1,4 @@
-import { connect, mapProps, mapReadPretty } from '@formily/react'
+import { connect, mapProps, mapReadPretty } from '@formily-x/react'
 import { Radio as NextRadio } from '@alifd/next'
 import {
   RadioProps,

@@ -12,9 +12,9 @@ import {
   FormButtonGroup,
   Submit,
   FormLayout,
-} from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+} from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 
 const SchemaField = createSchemaField({
   components: {
@@ -58,9 +58,9 @@ import {
   FormButtonGroup,
   Submit,
   FormLayout,
-} from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+} from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 const SchemaField = createSchemaField({
   components: {
     Password,
@@ -107,9 +107,9 @@ import {
   FormButtonGroup,
   Submit,
   FormLayout,
-} from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, Field } from '@formily/react'
+} from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, Field } from '@formily-x/react'
 const form = createForm()
 
 export default () => (

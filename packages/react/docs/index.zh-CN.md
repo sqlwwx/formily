@@ -34,7 +34,7 @@ footer: Open-source MIT Licensed | Copyright © 2019-present<br />Powered by sel
 ## 安装
 
 ```bash
-$ npm install --save @formily/core @formily/react
+$ npm install --save @formily-x/core @formily-x/react
 
 ```
 
@@ -45,14 +45,14 @@ $ npm install --save @formily/core @formily/react
  * defaultShowCode: true
  */
 import React, { useMemo } from 'react'
-import { createForm, setValidateLanguage } from '@formily/core'
+import { createForm, setValidateLanguage } from '@formily-x/core'
 import {
   FormProvider,
   FormConsumer,
   Field,
   useField,
   observer,
-} from '@formily/react'
+} from '@formily-x/react'
 import { Input, Form } from 'antd'
 
 // FormItem UI组件
@@ -71,7 +71,7 @@ const FormItem = observer(({ children }) => {
 })
 
 /*
- * 以上逻辑都已经在 @formily/antd 中实现，实际使用无需重复编写
+ * 以上逻辑都已经在 @formily-x/antd 中实现，实际使用无需重复编写
  */
 
 //切换内置校验国际化文案为英文

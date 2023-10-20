@@ -8,7 +8,7 @@
 
 ## 内核差异
 
-> 这里主要指@formily/core 的差异
+> 这里主要指@formily-x/core 的差异
 
 因为 Formily1.x 用户在使用内核 API 的时候，主要是使用 setFieldState/setFormState 与 getFieldState/getFormState，在 V2 中保留了这些 API，但是内部的模型属性是有语义上的差别的，差别如下：
 
@@ -79,12 +79,12 @@
 
 ## 桥接层差异
 
-> 这里主要指@formily/react 和@formily/react-schema-renderer 的差异
+> 这里主要指@formily-x/react 和@formily-x/react-schema-renderer 的差异
 
 **createFormActions/createAsyncFormActions**
 
 - V1 创建一个 Form 操作器，可以调用 setFieldState/setFormState 方法
-- V2 移除，统一使用@formily/core 中的[createForm](https://core.formilyjs.org/zh-CN/api/entry/create-form)创建出来的 Form 实例操作状态
+- V2 移除，统一使用@formily-x/core 中的[createForm](https://core.formilyjs.org/zh-CN/api/entry/create-form)创建出来的 Form 实例操作状态
 
 **Form**
 
@@ -174,7 +174,7 @@
 **FormEffectHooks**
 
 - V1 RxJS 生命周期钩子
-- V2 移除，统一从@formily/core 中导出，且不会返回 RxJS Observable 对象
+- V2 移除，统一从@formily-x/core 中导出，且不会返回 RxJS Observable 对象
 
 **effects**
 
@@ -227,12 +227,12 @@
 
 ## 组件库差异
 
-在 Formily1.x 中，我们主要使用@formily/antd 和@formily/antd-components，或者@formily/next 和@formily/next-components，
+在 Formily1.x 中，我们主要使用@formily-x/antd 和@formily-x/antd-components，或者@formily-x/next 和@formily-x/next-components，
 
 在 V2 中，我们有以下几个改变：
 
-- @formily/antd 与@formily/antd-components 合并成@formily/antd，同时目录结构全部改成纯组件库的目录结构了。
+- @formily-x/antd 与@formily-x/antd-components 合并成@formily-x/antd，同时目录结构全部改成纯组件库的目录结构了。
 
-- 不会再导出@formily/react @formily/core 的内部 API
+- 不会再导出@formily-x/react @formily-x/core 的内部 API
 - 所有组件几乎都做了重写，无法平滑升级
 - 移除 styled-components

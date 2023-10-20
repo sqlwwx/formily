@@ -34,7 +34,7 @@ footer: Open-source MIT Licensed | Copyright © 2019-present<br />Powered by sel
 ## 安装
 
 ```bash
-$ npm install --save @formily/core
+$ npm install --save @formily-x/core
 
 ```
 
@@ -42,7 +42,7 @@ $ npm install --save @formily/core
 
 > 以下案例是一步步教您从零实现一个表单
 >
-> @formily/core 给您带来了以下几个能力：
+> @formily-x/core 给您带来了以下几个能力：
 >
 > 1. 响应式计算能力
 > 2. 校验能力、校验国际化能力
@@ -55,8 +55,8 @@ $ npm install --save @formily/core
  * defaultShowCode: true
  */
 import React, { createContext, useMemo, useContext, useEffect } from 'react'
-import { createForm, setValidateLanguage } from '@formily/core'
-import { observer } from '@formily/reactive-react'
+import { createForm, setValidateLanguage } from '@formily-x/core'
+import { observer } from '@formily-x/reactive-react'
 
 //创建上下文，方便Field消费
 const FormContext = createContext()
@@ -152,7 +152,7 @@ const FormConsumer = observer((props) => {
 })
 
 /*
- * 以上逻辑都已经在 @formily/react 或 @formily/vue 中实现，实际使用无需重复编写
+ * 以上逻辑都已经在 @formily-x/react 或 @formily-x/vue 中实现，实际使用无需重复编写
  */
 
 //切换内置校验国际化文案为英文

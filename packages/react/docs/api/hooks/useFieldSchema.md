@@ -18,8 +18,12 @@ Schema Reference [Schema](/api/shared/schema)
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField, useFieldSchema } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import {
+  FormProvider,
+  createSchemaField,
+  useFieldSchema,
+} from '@formily-x/react'
 
 const form = createForm()
 

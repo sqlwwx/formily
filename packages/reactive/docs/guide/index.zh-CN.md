@@ -1,6 +1,6 @@
 # 介绍
 
-@formily/reactive 的核心思想是参考 [Mobx](https://mobx.js.org/) 的，那为什么要重新造轮子呢？
+@formily-x/reactive 的核心思想是参考 [Mobx](https://mobx.js.org/) 的，那为什么要重新造轮子呢？
 
 主要有 4 点原因：
 

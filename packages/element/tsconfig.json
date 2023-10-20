@@ -4,7 +4,7 @@
     "outDir": "./lib",
     "skipLibCheck": true,
     "paths": {
-      "@formily/*": ["../../packages/*", "../../devtools/*"]
+      "@formily-x/*": ["../../packages/*", "../../devtools/*"]
     },
     "plugins": [{ "transform": "./transformer.ts", "after": true }],
     "lib": ["ESNext", "DOM"]

@@ -1,4 +1,4 @@
-import { isArr, isFn } from '@formily/shared'
+import { isArr, isFn } from '@formily-x/shared'
 import { useFlatOptions } from './useFlatOptions'
 
 /**

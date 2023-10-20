@@ -91,8 +91,8 @@
 </template>
 
 <script>
-import { createForm } from '@formily/core'
-import { createSchemaField, FormProvider } from '@formily/vue'
+import { createForm } from '@formily-x/core'
+import { createSchemaField, FormProvider } from '@formily-x/vue'
 import {
   FormLayout,
   FormItem,
@@ -100,7 +100,7 @@ import {
   Space,
   FormButtonGroup,
   Submit,
-} from '@formily/element'
+} from '@formily-x/element'
 
 const fields = createSchemaField({
   components: { FormItem, FormLayout, Input, Space },

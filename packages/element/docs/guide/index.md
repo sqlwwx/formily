@@ -2,7 +2,7 @@
 
 ## 介绍
 
-@formily/element 是基于 Element UI 封装的针对表单场景专业级(Professional)组件库，它主要有以下几个特点：
+@formily-x/element 是基于 Element UI 封装的针对表单场景专业级(Professional)组件库，它主要有以下几个特点：
 
 - 更丰富的组件体系
 
@@ -70,14 +70,14 @@
 
 ```bash
 $ npm install --save element-ui
-$ npm install --save @formily/core @formily/vue @vue/composition-api @formily/element
+$ npm install --save @formily-x/core @formily-x/vue @vue/composition-api @formily-x/element
 ```
 
 ## 按需打包
 
 `Element-UI` 按需引入参见 [https://element.eleme.io/#/zh-CN/component/quickstart#an-xu-yin-ru](https://element.eleme.io/#/zh-CN/component/quickstart#an-xu-yin-ru)
 
-`@formily/element`按需引入需借助 `babel-plugin-import`
+`@formily-x/element`按需引入需借助 `babel-plugin-import`
 
 #### 安装 `babel-plugin-import`
 
@@ -106,7 +106,7 @@ yarn add babel-plugin-import --dev
     [
       "import",
       {
-        "libraryName": "@formily/element",
+        "libraryName": "@formily-x/element",
         "libraryDirectory": "esm",
         "style": true
       }

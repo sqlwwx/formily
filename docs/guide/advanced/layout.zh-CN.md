@@ -1,6 +1,6 @@
 # 实现表单布局
 
-表单布局主要是使用[@formily/antd](https://antd.formilyjs.org/zh-CN) 或 [@formily/next](https://fusion.formilyjs.org/zh-CN) 中的：
+表单布局主要是使用[@formily-x/antd](https://antd.formilyjs.org/zh-CN) 或 [@formily-x/next](https://fusion.formilyjs.org/zh-CN) 中的：
 
 - [FormLayout](https://antd.formilyjs.org/zh-CN/components/form-layout) 组件
 - [FormItem](https://antd.formilyjs.org/zh-CN/components/form-item) 组件

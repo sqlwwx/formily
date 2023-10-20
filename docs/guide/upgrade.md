@@ -8,7 +8,7 @@ But the original intention of the Formily2 project is to reduce everyone's learn
 
 ## Kernel Difference
 
-> This mainly refers to the difference between @formily/core
+> This mainly refers to the difference between @formily-x/core
 
 Because Formily1.x users mainly use setFieldState/setFormState and getFieldState/getFormState when using the core APIs, these APIs are retained in V2, but the internal model properties are semantically different. The differences are as follows:
 
@@ -74,12 +74,12 @@ Because Formily1.x users mainly use setFieldState/setFormState and getFieldState
 
 ## Bridge layer differences
 
-> This mainly refers to the difference between @formily/react and @formily/react-schema-renderer.
+> This mainly refers to the difference between @formily-x/react and @formily-x/react-schema-renderer.
 
 **createFormActions/createAsyncFormActions**
 
 - V1 Create a Form operator, you can call the setFieldState/setFormState method.
-- V2 is removed, and the operation status of the Form instance created by [createForm](https://core.formilyjs.org/api/entry/create-form) in @formily/core is used uniformly.
+- V2 is removed, and the operation status of the Form instance created by [createForm](https://core.formilyjs.org/api/entry/create-form) in @formily-x/core is used uniformly.
 
 **Form**
 
@@ -169,7 +169,7 @@ Because Formily1.x users mainly use setFieldState/setFormState and getFieldState
 **FormEffectHooks**
 
 - V1 RxJS lifecycle hook
-- V2 Remove, export from @formily/core uniformly, and will not return RxJS Observable object
+- V2 Remove, export from @formily-x/core uniformly, and will not return RxJS Observable object
 
 **effects**
 
@@ -222,12 +222,12 @@ Because Formily1.x users mainly use setFieldState/setFormState and getFieldState
 
 ## Component library differences
 
-In Formily 1.x, we mainly use @formily/antd and @formily/antd-components, or @formily/next and @formily/next-components.
+In Formily 1.x, we mainly use @formily-x/antd and @formily-x/antd-components, or @formily-x/next and @formily-x/next-components.
 
 In V2, we have the following changes:
 
-- @formily/antd and @formily/antd-components were merged into @formily/antd, and the directory structure was changed to that of a pure component library.
+- @formily-x/antd and @formily-x/antd-components were merged into @formily-x/antd, and the directory structure was changed to that of a pure component library.
 
-- The internal API of @formily/react @formily/core will no longer be exported.
+- The internal API of @formily-x/react @formily-x/core will no longer be exported.
 - Almost all components have been rewritten and cannot be smoothly upgraded.
 - Remove styled-components.

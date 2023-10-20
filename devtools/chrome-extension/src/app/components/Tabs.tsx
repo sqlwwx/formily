@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { toArr } from '@formily/shared'
+import { toArr } from '@formily-x/shared'
 
 export const Tabs = styled(({ className, dataSource, current, onChange }) => {
   current = current || 0

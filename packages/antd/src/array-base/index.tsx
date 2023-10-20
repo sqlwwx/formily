@@ -9,9 +9,14 @@ import {
   CopyOutlined,
 } from '@ant-design/icons'
 import { ButtonProps } from 'antd/lib/button'
-import { ArrayField } from '@formily/core'
-import { useField, useFieldSchema, Schema, JSXComponent } from '@formily/react'
-import { isValid, clone, isUndef } from '@formily/shared'
+import { ArrayField } from '@formily-x/core'
+import {
+  useField,
+  useFieldSchema,
+  Schema,
+  JSXComponent,
+} from '@formily-x/react'
+import { isValid, clone, isUndef } from '@formily-x/shared'
 import { usePrefixCls, SortableHandle } from '../__builtins__'
 import cls from 'classnames'
 
@@ -43,7 +48,12 @@ export type ArrayBaseMixins = {
     React.PropsWithChildren<IArrayBaseOperationProps & { index?: number }>
   >
   Remove?: React.FC<
-    React.PropsWithChildren<IArrayBaseOperationProps & { index?: number, onRemove?: (index: number, data: any) => void }>
+    React.PropsWithChildren<
+      IArrayBaseOperationProps & {
+        index?: number
+        onRemove?: (index: number, data: any) => void
+      }
+    >
   >
   MoveUp?: React.FC<
     React.PropsWithChildren<IArrayBaseOperationProps & { index?: number }>

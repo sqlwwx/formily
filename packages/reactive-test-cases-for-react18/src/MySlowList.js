@@ -1,5 +1,5 @@
 import React from 'react'
-import { observer } from '@formily/reactive-react'
+import { observer } from '@formily-x/reactive-react'
 
 // Note: this file is exactly the same in both examples.
 

@@ -14,13 +14,13 @@
 
 <script>
 import { defineComponent } from '@vue/composition-api'
-import { createForm } from '@formily/core'
+import { createForm } from '@formily-x/core'
 import {
   FormProvider,
   h,
   createSchemaField,
   ExpressionScope,
-} from '@formily/vue'
+} from '@formily-x/vue'
 
 const Container = defineComponent({
   setup(_props, { slots }) {

@@ -22,8 +22,8 @@ Form reference [Form](https://core.formilyjs.org/api/models/form)
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { FormProvider, Field } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import { FormProvider, Field } from '@formily-x/react'
 import { Input } from 'antd'
 
 const form = createForm()

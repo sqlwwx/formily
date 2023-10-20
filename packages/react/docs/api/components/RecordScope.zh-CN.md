@@ -28,14 +28,14 @@ type RecordScope = React.FC<React.PropsWithChildren<IRecordScopeProps>>
 ## 使用约定
 
 任何自增列表扩展组件，内部都应该使用 RecordScope，用于传递记录作用域变量，目前已实现该约定的组件包括：
-@formily/antd 和 @formily/next 中的 ArrayX 系列的所有组件
+@formily-x/antd 和 @formily-x/next 中的 ArrayX 系列的所有组件
 
 ## 自定义组件扩展用例
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField, RecordScope } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField, RecordScope } from '@formily-x/react'
 import { Input } from 'antd'
 
 const form = createForm()

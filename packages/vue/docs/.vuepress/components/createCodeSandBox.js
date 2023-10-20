@@ -65,8 +65,8 @@ export function createCodeSandBox(codeStr) {
             lint: 'vue-cli-service lint',
           },
           dependencies: {
-            '@formily/core': 'latest',
-            '@formily/vue': 'latest',
+            '@formily-x/core': 'latest',
+            '@formily-x/vue': 'latest',
             'core-js': '^3.6.5',
             'ant-design-vue': 'latest',
             'vue-demi': 'latest',

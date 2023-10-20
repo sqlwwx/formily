@@ -182,7 +182,7 @@ export default {
     ],
     '/api': [
       {
-        title: '@formily/reactive',
+        title: '@formily-x/reactive',
         children: [
           {
             title: 'observable',
@@ -252,7 +252,7 @@ export default {
         ],
       },
       {
-        title: '@formily/reactive-react',
+        title: '@formily-x/reactive-react',
         children: [
           {
             title: 'observer',
@@ -261,7 +261,7 @@ export default {
         ],
       },
       {
-        title: '@formily/reactive-vue',
+        title: '@formily-x/reactive-vue',
         children: [
           {
             title: 'observer',
@@ -283,7 +283,7 @@ export default {
     ],
     '/zh-CN/api': [
       {
-        title: '@formily/reactive',
+        title: '@formily-x/reactive',
         children: [
           {
             title: 'observable',
@@ -353,7 +353,7 @@ export default {
         ],
       },
       {
-        title: '@formily/reactive-react',
+        title: '@formily-x/reactive-react',
         children: [
           {
             title: 'observer',
@@ -362,7 +362,7 @@ export default {
         ],
       },
       {
-        title: '@formily/reactive-vue',
+        title: '@formily-x/reactive-vue',
         children: [
           {
             title: 'observer',

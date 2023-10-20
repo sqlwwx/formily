@@ -8,9 +8,9 @@ Formily's kernel architecture is very complicated, because it is necessary to so
 
 ## Description
 
-From the above figure, we can see that the Formily kernel is actually a @formily/reactive domain model.
+From the above figure, we can see that the Formily kernel is actually a @formily-x/reactive domain model.
 
-The actual consumption domain model mainly relies on the @formily/reactive responder mechanism for dependency tracking to consume.
+The actual consumption domain model mainly relies on the @formily-x/reactive responder mechanism for dependency tracking to consume.
 
 We can consume any attribute in the Form/Field/ArrayField/ObjectField/VoidField model in the responder (Reactions). When the dependent attribute changes, the responder will execute repeatedly.
 

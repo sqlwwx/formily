@@ -1,14 +1,14 @@
-import { Form, VoidField } from '@formily/core'
-import { Schema, SchemaKey } from '@formily/json-schema'
-import { action, model, observable } from '@formily/reactive'
-import { observer } from '@formily/reactive-vue'
+import { Form, VoidField } from '@formily-x/core'
+import { Schema, SchemaKey } from '@formily-x/json-schema'
+import { action, model, observable } from '@formily-x/reactive'
+import { observer } from '@formily-x/reactive-vue'
 import {
   Fragment,
   h,
   RecursionField,
   useField,
   useFieldSchema,
-} from '@formily/vue'
+} from '@formily-x/vue'
 import { Step, Steps } from 'element-ui'
 import { defineComponent, PropType } from 'vue-demi'
 import { stylePrefix } from '../__builtins__/configs'

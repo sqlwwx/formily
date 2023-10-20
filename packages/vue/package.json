@@ -1,5 +1,5 @@
 {
-  "name": "@formily/vue",
+  "name": "@formily-x/vue",
   "version": "2.2.30",
   "license": "MIT",
   "main": "lib",
@@ -45,12 +45,12 @@
     "vuepress-plugin-typescript": "^0.3.1"
   },
   "dependencies": {
-    "@formily/core": "2.2.30",
-    "@formily/json-schema": "2.2.30",
-    "@formily/reactive": "2.2.30",
-    "@formily/reactive-vue": "2.2.30",
-    "@formily/shared": "2.2.30",
-    "@formily/validator": "2.2.30",
+    "@formily-x/core": "2.2.30",
+    "@formily-x/json-schema": "2.2.30",
+    "@formily-x/reactive": "2.2.30",
+    "@formily-x/reactive-vue": "2.2.30",
+    "@formily-x/shared": "2.2.30",
+    "@formily-x/validator": "2.2.30",
     "fs-extra": "^10.0.0",
     "vue-demi": "^0.13.6",
     "vue-frag": "^1.1.4"

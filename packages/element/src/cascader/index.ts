@@ -1,4 +1,4 @@
-import { connect, mapProps, mapReadPretty } from '@formily/vue'
+import { connect, mapProps, mapReadPretty } from '@formily-x/vue'
 import { Cascader as ELCascader } from 'element-ui'
 
 import type { Cascader as ElCascaderProps } from 'element-ui'

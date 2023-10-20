@@ -6,8 +6,8 @@
 
 <script>
 import { Input, Icon } from 'ant-design-vue'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/vue'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/vue'
 import 'ant-design-vue/dist/antd.css'
 
 const { SchemaField } = createSchemaField({

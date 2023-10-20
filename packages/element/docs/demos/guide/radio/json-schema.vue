@@ -6,9 +6,9 @@
 </template>
 
 <script>
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/vue'
-import { Form, FormItem, Radio, Submit } from '@formily/element'
+import { createForm } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/vue'
+import { Form, FormItem, Radio, Submit } from '@formily-x/element'
 
 const { SchemaField } = createSchemaField({
   components: {

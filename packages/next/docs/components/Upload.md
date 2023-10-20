@@ -14,9 +14,9 @@ import {
   FormButtonGroup,
   Submit,
   FormLayout,
-} from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+} from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 import { Button } from '@alifd/next'
 import { UploadOutlined, InboxOutlined } from '@ant-design/icons'
 
@@ -126,9 +126,9 @@ import {
   FormButtonGroup,
   Submit,
   FormLayout,
-} from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+} from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 import { Button } from '@alifd/next'
 import { UploadOutlined, InboxOutlined } from '@ant-design/icons'
 
@@ -243,9 +243,9 @@ import {
   FormButtonGroup,
   Submit,
   FormLayout,
-} from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, Field } from '@formily/react'
+} from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, Field } from '@formily-x/react'
 import { Button } from '@alifd/next'
 import { UploadOutlined, InboxOutlined } from '@ant-design/icons'
 

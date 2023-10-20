@@ -6,7 +6,7 @@ order: 1
 
 调用[createField](/api/models/form#createfield)所返回的 Field 模型。
 
-以下会列出所有模型属性，如果该属性是可写的，那么我们可以直接引用是修改该属性，@formily/reactive 便会响应从而触发 UI 更新。
+以下会列出所有模型属性，如果该属性是可写的，那么我们可以直接引用是修改该属性，@formily-x/reactive 便会响应从而触发 UI 更新。
 
 ## 属性
 
@@ -796,7 +796,7 @@ type FieldDataSource<ValueType> = Array<{
 }>
 ```
 
-字段数据源其实就是一个数组，内容是啥形式由用户定，只是我们推荐用户都以 label/value 形式来表达数据源，这里需要注意的是，如果要在 UI 框架中使用，不是设置了就直接能生效，dataSource 属性必须是与具体 UI 组件产生了绑定才能生效，比如使用@formily/react，想要绑定状态，可以使用 connect 函数，也可以直接在组件内通过 useField 拿到字段实例，直接消费。
+字段数据源其实就是一个数组，内容是啥形式由用户定，只是我们推荐用户都以 label/value 形式来表达数据源，这里需要注意的是，如果要在 UI 框架中使用，不是设置了就直接能生效，dataSource 属性必须是与具体 UI 组件产生了绑定才能生效，比如使用@formily-x/react，想要绑定状态，可以使用 connect 函数，也可以直接在组件内通过 useField 拿到字段实例，直接消费。
 
 ### FieldValue
 

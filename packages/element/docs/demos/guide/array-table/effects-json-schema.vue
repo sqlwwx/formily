@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import { createForm, onFieldChange, onFieldReact } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/vue'
+import { createForm, onFieldChange, onFieldReact } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/vue'
 import {
   Submit,
   FormItem,
@@ -15,7 +15,7 @@ import {
   Input,
   Editable,
   Switch,
-} from '@formily/element'
+} from '@formily-x/element'
 
 const fields = createSchemaField({
   components: {

@@ -2,7 +2,7 @@
 
 ## Pure Core,No UI
 
-Because @formily/core exists as an independent package, its core meaning is to separate the domain model from the UI framework, and at the same time, it can bring the following two intuitive benefits to developers:
+Because @formily-x/core exists as an independent package, its core meaning is to separate the domain model from the UI framework, and at the same time, it can bring the following two intuitive benefits to developers:
 
 1. It is convenient for formily developers to release from the coupling relationship between UI and logic, and improve code maintainability;
 
@@ -10,7 +10,7 @@ Because @formily/core exists as an independent package, its core meaning is to s
 
 ## Ultra high performance
 
-With the help of @formily/reactive, @formily/core naturally gains the ability to track dependencies, update efficiently, and render on-demand. Whether it is under React or Vue/Angular, whether it is frequent field input or field linkage, it can give Users bring O(1) performance experience, developers do not need to care about performance optimization, only need to focus on business logic implementation.
+With the help of @formily-x/reactive, @formily-x/core naturally gains the ability to track dependencies, update efficiently, and render on-demand. Whether it is under React or Vue/Angular, whether it is frequent field input or field linkage, it can give Users bring O(1) performance experience, developers do not need to care about performance optimization, only need to focus on business logic implementation.
 
 ## Domain Model
 

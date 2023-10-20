@@ -1,6 +1,6 @@
 # 表单校验
 
-Formily 的表单校验使用了极其强大且灵活的@formily/validator 校验引擎，校验主要分两种场景：
+Formily 的表单校验使用了极其强大且灵活的@formily-x/validator 校验引擎，校验主要分两种场景：
 
 - Markup(JSON) Schema 场景协议校验属性校验，使用 JSON Schema 本身的校验属性与 x-validator 属性实现校验
 - 纯 JSX 场景校验属性，使用 validator 属性实现校验
@@ -15,9 +15,9 @@ Formily 的表单校验使用了极其强大且灵活的@formily/validator 校�
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input, NumberPicker } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input, NumberPicker } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -238,9 +238,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input, NumberPicker } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input, NumberPicker } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -541,9 +541,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { Field } from '@formily/react'
-import { Form, FormItem, Input, NumberPicker } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { Field } from '@formily-x/react'
+import { Form, FormItem, Input, NumberPicker } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -687,9 +687,9 @@ export default () => (
 
 ```tsx
 import React, { Fragment } from 'react'
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -774,9 +774,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -871,9 +871,9 @@ export default () => (
 
 ```tsx
 import React, { Fragment } from 'react'
-import { createForm } from '@formily/core'
-import { Field } from '@formily/react'
-import { Form, FormItem, Input } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { Field } from '@formily-x/react'
+import { Form, FormItem, Input } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -945,9 +945,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm, registerValidateRules } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input, NumberPicker } from '@formily/antd'
+import { createForm, registerValidateRules } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input, NumberPicker } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -1113,9 +1113,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm, registerValidateRules } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input, NumberPicker } from '@formily/antd'
+import { createForm, registerValidateRules } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input, NumberPicker } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -1278,9 +1278,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm, registerValidateRules } from '@formily/core'
-import { Field } from '@formily/react'
-import { Form, FormItem, Input, NumberPicker } from '@formily/antd'
+import { createForm, registerValidateRules } from '@formily-x/core'
+import { Field } from '@formily-x/react'
+import { Form, FormItem, Input, NumberPicker } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -1438,9 +1438,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm, registerValidateFormats } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input } from '@formily/antd'
+import { createForm, registerValidateFormats } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -1544,9 +1544,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm, registerValidateFormats } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input } from '@formily/antd'
+import { createForm, registerValidateFormats } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -1646,9 +1646,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm, registerValidateFormats } from '@formily/core'
-import { Field } from '@formily/react'
-import { Form, FormItem, Input } from '@formily/antd'
+import { createForm, registerValidateFormats } from '@formily-x/core'
+import { Field } from '@formily-x/react'
+import { Form, FormItem, Input } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -1728,9 +1728,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -1798,9 +1798,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -1871,9 +1871,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { Field } from '@formily/react'
-import { Form, FormItem, Input } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { Field } from '@formily-x/react'
+import { Form, FormItem, Input } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -1934,9 +1934,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, NumberPicker } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, NumberPicker } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -1981,9 +1981,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, NumberPicker } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, NumberPicker } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -2035,9 +2035,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { Field } from '@formily/react'
-import { Form, FormItem, NumberPicker } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { Field } from '@formily-x/react'
+import { Form, FormItem, NumberPicker } from '@formily-x/antd'
 
 const form = createForm()
 
@@ -2079,9 +2079,9 @@ import {
   createForm,
   registerValidateLocale,
   setValidateLanguage,
-} from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input } from '@formily/antd'
+} from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input } from '@formily-x/antd'
 
 const form = createForm()
 

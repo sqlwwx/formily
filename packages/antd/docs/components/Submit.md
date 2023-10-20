@@ -6,9 +6,9 @@
 
 ```tsx
 import React from 'react'
-import { Input, FormItem, FormButtonGroup, Submit } from '@formily/antd'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+import { Input, FormItem, FormButtonGroup, Submit } from '@formily-x/antd'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 
 const SchemaField = createSchemaField({
   components: {
@@ -49,9 +49,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { Input, FormItem, FormButtonGroup, Submit } from '@formily/antd'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+import { Input, FormItem, FormButtonGroup, Submit } from '@formily-x/antd'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 
 const SchemaField = createSchemaField({
   components: {

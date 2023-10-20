@@ -1,6 +1,6 @@
-import { connect, mapProps } from '@formily/react'
+import { connect, mapProps } from '@formily-x/react'
 import { Transfer as AntdTransfer } from 'antd'
-import { isVoidField } from '@formily/core'
+import { isVoidField } from '@formily-x/core'
 
 export const Transfer = connect(
   AntdTransfer,

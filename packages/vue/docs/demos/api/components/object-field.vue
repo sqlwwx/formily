@@ -28,8 +28,8 @@
 
 <script>
 import { Input, Space, Button } from 'ant-design-vue'
-import { createForm } from '@formily/core'
-import { FormProvider, ObjectField, Field } from '@formily/vue'
+import { createForm } from '@formily-x/core'
+import { FormProvider, ObjectField, Field } from '@formily-x/vue'
 import 'ant-design-vue/dist/antd.css'
 
 export default {

@@ -16,14 +16,14 @@ interface mapReadPretty<Target extends React.FC> {
 
 ```tsx
 import React, { useMemo } from 'react'
-import { createForm } from '@formily/core'
+import { createForm } from '@formily-x/core'
 import {
   FormProvider,
   Field,
   connect,
   mapProps,
   mapReadPretty,
-} from '@formily/react'
+} from '@formily-x/react'
 import { Input as AntdInput, Form } from 'antd'
 
 // FormItem UI组件

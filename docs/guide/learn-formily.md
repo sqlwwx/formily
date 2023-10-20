@@ -20,7 +20,7 @@ Because Formily’s learning costs are still relatively high, if you want to qui
 - Digest the core concepts carefully and have a deeper understanding of Formily.
 - Advanced guide, mainly to learn more advanced usage methods, such as custom components, from simple custom components to super complex custom components.
 - Read component documents/core library documents at any time to deepen memory
-- For the details and best practices of custom component development, it is recommended to look directly at the source code of @formily/antd or @formily/next, because this is the boilerplate code and is closely related to the actual business scenario.
+- For the details and best practices of custom component development, it is recommended to look directly at the source code of @formily-x/antd or @formily-x/next, because this is the boilerplate code and is closely related to the actual business scenario.
 
 ### Source code co-builder
 

@@ -1,14 +1,14 @@
 import React from 'react'
 import { Card } from '@alifd/next'
 import { CardProps } from '@alifd/next/lib/card'
-import { ArrayField } from '@formily/core'
+import { ArrayField } from '@formily-x/core'
 import {
   useField,
   observer,
   useFieldSchema,
   RecursionField,
-} from '@formily/react'
-import { ISchema } from '@formily/json-schema'
+} from '@formily-x/react'
+import { ISchema } from '@formily-x/json-schema'
 import { usePrefixCls } from '../__builtins__'
 import { ArrayBase, ArrayBaseMixins, IArrayBaseProps } from '../array-base'
 import cls from 'classnames'

@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import { createForm } from '@formily/core'
-import { FormProvider, Field } from '@formily/vue'
-import { FormItem, Password, Submit } from '@formily/element'
+import { createForm } from '@formily-x/core'
+import { FormProvider, Field } from '@formily-x/vue'
+import { FormItem, Password, Submit } from '@formily-x/element'
 
 const form = createForm()
 

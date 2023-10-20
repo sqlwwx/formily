@@ -10,7 +10,7 @@
 
 那么，Formily 解决方案在 MVVM 中应该是什么样的定位呢？
 
-很明显，Formily 它提供了 View 和 ViewModel 两层能力，View 则是@formily/react @formily/vue，专门用来与@formily/core 做桥接通讯的，所以，@formily/core 的定位就是 ViewModel 层，
+很明显，Formily 它提供了 View 和 ViewModel 两层能力，View 则是@formily-x/react @formily-x/vue，专门用来与@formily-x/core 做桥接通讯的，所以，@formily-x/core 的定位就是 ViewModel 层，
 
 那 Model 层在哪里呢？
 

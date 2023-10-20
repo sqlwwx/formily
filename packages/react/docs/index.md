@@ -34,7 +34,7 @@ footer: Open-source MIT Licensed | Copyright © 2019-present<br />Powered by sel
 ## Installation
 
 ```bash
-$ npm install --save @formily/core @formily/react
+$ npm install --save @formily-x/core @formily-x/react
 
 ```
 
@@ -45,14 +45,14 @@ $ npm install --save @formily/core @formily/react
  * defaultShowCode: true
  */
 import React, { useMemo } from 'react'
-import { createForm, setValidateLanguage } from '@formily/core'
+import { createForm, setValidateLanguage } from '@formily-x/core'
 import {
   FormProvider,
   FormConsumer,
   Field,
   useField,
   observer,
-} from '@formily/react'
+} from '@formily-x/react'
 import { Input, Form } from 'antd'
 
 // FormItem UI component
@@ -71,7 +71,7 @@ const FormItem = observer(({ children }) => {
 })
 
 /*
- * The above logic has been implemented in @formily/antd, and there is no need to rewrite it in actual use
+ * The above logic has been implemented in @formily-x/antd, and there is no need to rewrite it in actual use
  */
 
 //Switch the built-in check internationalization copy to English

@@ -31,7 +31,7 @@ All Annotations currently supported are:
 ## Example
 
 ```ts
-import { define, observable, action, autorun } from '@formily/reactive'
+import { define, observable, action, autorun } from '@formily-x/reactive'
 
 class DomainModel {
   deep = { aa: 1 }

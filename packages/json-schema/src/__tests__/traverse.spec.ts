@@ -1,5 +1,5 @@
 import { traverse, traverseSchema } from '../shared'
-import { FormPath } from '@formily/shared'
+import { FormPath } from '@formily-x/shared'
 
 test('traverseSchema', () => {
   const visited = []

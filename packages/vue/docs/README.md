@@ -25,13 +25,13 @@ footer: Open-source MIT Licensed | Copyright © 2019-present
 vue3:
 
 ```bash
-$ npm install --save @formily/core @formily/vue
+$ npm install --save @formily-x/core @formily-x/vue
 ```
 
 vue2:
 
 ```bash
-$ npm install --save @formily/core @formily/vue @vue/composition-api
+$ npm install --save @formily-x/core @formily-x/vue @vue/composition-api
 ```
 
 ## 快速开始

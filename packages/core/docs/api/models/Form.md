@@ -4,7 +4,7 @@ order: 0
 
 # Form
 
-Call the core [Form Model](/guide/form) API returned by [createForm](/api/entry/create-form), the following will list all model attributes, if the attribute is writable, then we can directly The reference is to modify the attribute, and @formily/reactive will respond to trigger the UI update.
+Call the core [Form Model](/guide/form) API returned by [createForm](/api/entry/create-form), the following will list all model attributes, if the attribute is writable, then we can directly The reference is to modify the attribute, and @formily-x/reactive will respond to trigger the UI update.
 
 ## Attributes
 

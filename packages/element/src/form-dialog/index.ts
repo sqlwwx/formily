@@ -1,6 +1,6 @@
-import { createForm, Form, IFormProps } from '@formily/core'
-import { toJS } from '@formily/reactive'
-import { observer } from '@formily/reactive-vue'
+import { createForm, Form, IFormProps } from '@formily-x/core'
+import { toJS } from '@formily-x/reactive'
+import { observer } from '@formily-x/reactive-vue'
 import {
   applyMiddleware,
   IMiddleware,
@@ -8,8 +8,8 @@ import {
   isFn,
   isNum,
   isStr,
-} from '@formily/shared'
-import { FormProvider, Fragment, h } from '@formily/vue'
+} from '@formily-x/shared'
+import { FormProvider, Fragment, h } from '@formily-x/vue'
 import type { Button as ButtonProps, Dialog as DialogProps } from 'element-ui'
 import { Button, Dialog } from 'element-ui'
 import { t } from 'element-ui/src/locale'
@@ -248,7 +248,7 @@ export function FormDialog(
                                   Button,
                                   {
                                     attrs: {
-                                      ...cancelButtonProps
+                                      ...cancelButtonProps,
                                     },
                                     on: {
                                       click: (e) => {

@@ -6,7 +6,7 @@ order: 4
 
 调用[createVoidField](/api/models/form#createvoidfield)所返回的 VoidField 模型。
 
-以下会列出所有模型属性，如果该属性是可写的，那么我们可以直接引用是修改该属性，@formily/reactive 便会响应从而触发 UI 更新。
+以下会列出所有模型属性，如果该属性是可写的，那么我们可以直接引用是修改该属性，@formily-x/reactive 便会响应从而触发 UI 更新。
 
 ## 属性
 

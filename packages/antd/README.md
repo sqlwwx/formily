@@ -1,7 +1,7 @@
-# @formily/antd
+# @formily-x/antd
 
 ### Install
 
 ```bash
-npm install --save @formily/antd
+npm install --save @formily-x/antd
 ```

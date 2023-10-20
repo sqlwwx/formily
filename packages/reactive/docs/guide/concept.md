@@ -4,9 +4,9 @@
 
 Observable is the most important part of the reactive programming model. Its core concepts are:
 
-An observable object, literally means a subscribable object, **we create a subscribable object, each time we manipulate the attribute data of the object, we will automatically notify the subscriber**, @formily/reactive creates an observable object mainly It is created by ES Proxy, which can perfectly hijack data operations
+An observable object, literally means a subscribable object, **we create a subscribable object, each time we manipulate the attribute data of the object, we will automatically notify the subscriber**, @formily-x/reactive creates an observable object mainly It is created by ES Proxy, which can perfectly hijack data operations
 
-We mainly use the following APIs to create observable objects in @formily/reactive:
+We mainly use the following APIs to create observable objects in @formily-x/reactive:
 
 - The observable function creates a deep observable object
   - The observable.deep function creates a deep hijacking observable object
@@ -25,7 +25,7 @@ In the reactive programming model, reaction is equivalent to the subscriber of t
 
 You can see that from subscribing to dispatching subscriptions, it is actually a closed loop state machine. Each time the tracker function is executed, the dependencies are re-collected, and the tracker execution is re-triggered when the dependencies change. So, if we don't want to subscribe to the reaction anymore, we must manually dispose, otherwise there will be memory leaks.
 
-In @formily/reactive, we mainly use the following APIs to create reactions:
+In @formily-x/reactive, we mainly use the following APIs to create reactions:
 
 - autorun creates an automatically executed responder
 - reaction creates a responder that can implement dirty checks
@@ -41,10 +41,10 @@ The requirement here is that the computed function must be a pure function. The 
 
 ## Batch
 
-As mentioned earlier, @formily/reactive is a reactive programming model based on Proxy hijacking. Therefore, any atomic operation will trigger the execution of Reaction, which is obviously a waste of computing resources. For example, we have a function for multiple observables. Property to operate:
+As mentioned earlier, @formily-x/reactive is a reactive programming model based on Proxy hijacking. Therefore, any atomic operation will trigger the execution of Reaction, which is obviously a waste of computing resources. For example, we have a function for multiple observables. Property to operate:
 
 ```ts
-import { observable, autorun } from '@formily/reactive'
+import { observable, autorun } from '@formily-x/reactive'
 const obs = observable({})
 const handler = () => {
   obs.aa = 123
@@ -61,7 +61,7 @@ handler()
 This will execute 3 prints, autorun is executed once by default, plus the assignment of obs.aa is executed once, and the assignment of obs.bb is executed once. If there are more atomic operations, the number of executions will be more. Therefore, we recommend using batch mode To merge the updates:
 
 ```ts
-import { observable, autorun, batch } from '@formily/reactive'
+import { observable, autorun, batch } from '@formily-x/reactive'
 const obs = observable({})
 const handler = () => {
   obs.aa = 123
@@ -80,7 +80,7 @@ batch(() => {
 Of course, we can also use action for high-level packaging:
 
 ```ts
-import { observable, autorun, action } from '@formily/reactive'
+import { observable, autorun, action } from '@formily-x/reactive'
 const obs = observable({})
 const handler = action.bound(() => {
   obs.aa = 123

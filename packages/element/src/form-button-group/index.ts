@@ -1,4 +1,4 @@
-import { h } from '@formily/vue'
+import { h } from '@formily-x/vue'
 import { defineComponent } from 'vue-demi'
 import { FormBaseItem } from '../form-item'
 import { Space, SpaceProps } from '../space'

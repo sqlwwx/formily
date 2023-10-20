@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/vue'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/vue'
 import {
   FormLayout,
   Submit,
@@ -34,7 +34,7 @@ import {
   FormItem,
   Input,
   Select,
-} from '@formily/element'
+} from '@formily-x/element'
 
 const fields = createSchemaField({ components: { FormItem, Input, Select } })
 

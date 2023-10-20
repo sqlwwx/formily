@@ -25,7 +25,7 @@ footer: Open-source MIT Licensed | Copyright © 2019-present<br />Powered by sel
 ## 安装
 
 ```bash
-$ npm install --save @formily/reactive
+$ npm install --save @formily-x/reactive
 
 ```
 
@@ -36,8 +36,8 @@ $ npm install --save @formily/reactive
  * defaultShowCode: true
  */
 import React from 'react'
-import { observable } from '@formily/reactive'
-import { observer } from '@formily/reactive-react'
+import { observable } from '@formily-x/reactive'
+import { observer } from '@formily-x/reactive-react'
 
 const obs = observable({
   value: 'Hello world',

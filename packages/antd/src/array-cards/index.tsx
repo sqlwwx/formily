@@ -7,18 +7,18 @@ import React, {
 } from 'react'
 import { Card, Empty, Pagination, Space, Select, Badge } from 'antd'
 import { CardProps } from 'antd/lib/card'
-import { IGridOptions } from '@formily/grid'
-import { ArrayField } from '@formily/core'
+import { IGridOptions } from '@formily-x/grid'
+import { ArrayField } from '@formily-x/core'
 import {
   useForm,
   useField,
   observer,
   useFieldSchema,
   RecursionField,
-} from '@formily/react'
-import { isBool, isFn } from '@formily/shared'
+} from '@formily-x/react'
+import { isBool, isFn } from '@formily-x/shared'
 import cls from 'classnames'
-import { ISchema } from '@formily/json-schema'
+import { ISchema } from '@formily-x/json-schema'
 import { SelectProps } from 'antd/lib/select'
 import { usePrefixCls } from '../__builtins__'
 import { ArrayBase, ArrayBaseMixins, IArrayBaseProps } from '../array-base'

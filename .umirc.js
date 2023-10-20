@@ -20,19 +20,19 @@ export default {
         title: 'Basic Core Library',
         children: [
           {
-            title: '@formily/reactive',
+            title: '@formily-x/reactive',
             path: 'https://reactive.formilyjs.org',
           },
           {
-            title: '@formily/core',
+            title: '@formily-x/core',
             path: 'https://core.formilyjs.org',
           },
           {
-            title: '@formily/react',
+            title: '@formily-x/react',
             path: 'https://react.formilyjs.org',
           },
           {
-            title: '@formily/vue',
+            title: '@formily-x/vue',
             path: 'https://vue.formilyjs.org',
           },
         ],
@@ -41,47 +41,47 @@ export default {
         title: 'Component Ecology',
         children: [
           {
-            title: '@formily/antd',
+            title: '@formily-x/antd',
             path: 'https://antd.formilyjs.org',
           },
           {
-            title: '@formily/antd-v5',
+            title: '@formily-x/antd-v5',
             path: 'https://antd5.formilyjs.org',
           },
           {
-            title: '@formily/antd-mobile',
+            title: '@formily-x/antd-mobile',
             path: 'https://antd-mobile.formilyjs.org',
           },
           {
-            title: '@formily/next',
+            title: '@formily-x/next',
             path: 'https://fusion.formilyjs.org',
           },
           {
-            title: '@formily/element',
+            title: '@formily-x/element',
             path: 'https://element.formilyjs.org',
           },
           {
-            title: '@formily/element-plus',
+            title: '@formily-x/element-plus',
             path: 'https://element-plus.formilyjs.org',
           },
           {
-            title: '@formily/antdv',
+            title: '@formily-x/antdv',
             path: 'https://antdv.formilyjs.org',
           },
           {
-            title: '@formily/antdv-x3',
+            title: '@formily-x/antdv-x3',
             path: 'https://antdv-x3.formilyjs.org',
           },
           {
-            title: '@formily/vant',
+            title: '@formily-x/vant',
             path: 'https://vant.formilyjs.org',
           },
           {
-            title: '@formily/semi',
+            title: '@formily-x/semi',
             path: 'https://semi.formilyjs.org',
           },
           {
-            title: '@formily/tdesign-react',
+            title: '@formily-x/tdesign-react',
             path: 'https://tdesign-react.formilyjs.org/',
           },
           {
@@ -139,19 +139,19 @@ export default {
         title: '基础核心库',
         children: [
           {
-            title: '@formily/reactive',
+            title: '@formily-x/reactive',
             path: 'https://reactive.formilyjs.org/zh-CN',
           },
           {
-            title: '@formily/core',
+            title: '@formily-x/core',
             path: 'https://core.formilyjs.org/zh-CN',
           },
           {
-            title: '@formily/react',
+            title: '@formily-x/react',
             path: 'https://react.formilyjs.org/zh-CN',
           },
           {
-            title: '@formily/vue',
+            title: '@formily-x/vue',
             path: 'https://vue.formilyjs.org',
           },
         ],
@@ -160,43 +160,43 @@ export default {
         title: '组件生态',
         children: [
           {
-            title: '@formily/antd',
+            title: '@formily-x/antd',
             path: 'https://antd.formilyjs.org/zh-CN',
           },
           {
-            title: '@formily/antd-v5',
+            title: '@formily-x/antd-v5',
             path: 'https://antd5.formilyjs.org/zh-CN',
           },
           {
-            title: '@formily/antd-mobile',
+            title: '@formily-x/antd-mobile',
             path: 'https://antd-mobile.formilyjs.org/zh-CN',
           },
           {
-            title: '@formily/next',
+            title: '@formily-x/next',
             path: 'https://fusion.formilyjs.org/zh-CN',
           },
           {
-            title: '@formily/element',
+            title: '@formily-x/element',
             path: 'https://element.formilyjs.org',
           },
           {
-            title: '@formily/element-plus',
+            title: '@formily-x/element-plus',
             path: 'https://element-plus.formilyjs.org',
           },
           {
-            title: '@formily/antdv',
+            title: '@formily-x/antdv',
             path: 'https://antdv.formilyjs.org',
           },
           {
-            title: '@formily/vant',
+            title: '@formily-x/vant',
             path: 'https://vant.formilyjs.org',
           },
           {
-            title: '@formily/semi',
+            title: '@formily-x/semi',
             path: 'https://semi.formilyjs.org',
           },
           {
-            title: '@formily/tdesign-react',
+            title: '@formily-x/tdesign-react',
             path: 'https://tdesign-react.formilyjs.org',
           },
           {

@@ -11,16 +11,16 @@ import { PaginationProps } from '@alifd/next/lib/pagination'
 import { TableProps, ColumnProps } from '@alifd/next/lib/table'
 import { SelectProps } from '@alifd/next/lib/select'
 import cls from 'classnames'
-import { GeneralField, FieldDisplayTypes, ArrayField } from '@formily/core'
+import { GeneralField, FieldDisplayTypes, ArrayField } from '@formily-x/core'
 import {
   useField,
   observer,
   useFieldSchema,
   RecursionField,
   ReactFC,
-} from '@formily/react'
-import { isArr, isBool, isFn } from '@formily/shared'
-import { Schema } from '@formily/json-schema'
+} from '@formily-x/react'
+import { isArr, isBool, isFn } from '@formily-x/shared'
+import { Schema } from '@formily-x/json-schema'
 import { usePrefixCls } from '../__builtins__'
 import { ArrayBase, ArrayBaseMixins, IArrayBaseProps } from '../array-base'
 

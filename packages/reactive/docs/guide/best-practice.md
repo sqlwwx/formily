@@ -1,6 +1,6 @@
 # Best Practices
 
-When using @formily/reactive, we only need to pay attention to the following points:
+When using @formily-x/reactive, we only need to pay attention to the following points:
 
 - Minimize the use of observable/observable.deep for deep packaging, instead of using observable.ref/observable.shallow as a last resort, the performance will be better
 - Multi-use computed properties in the domain model, which can intelligently cache the calculation results

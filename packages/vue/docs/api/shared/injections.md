@@ -2,7 +2,7 @@
 
 ## 描述
 
-@formily/vue 的所有 injections，方便用户做更复杂的个性化定制，我们可以通过 inject 来消费这些上下文
+@formily-x/vue 的所有 injections，方便用户做更复杂的个性化定制，我们可以通过 inject 来消费这些上下文
 
 ## FormContext
 
@@ -13,7 +13,7 @@ Form 上下文，可以获取当前 Form 实例
 #### 签名
 
 ```ts
-import { Form } from '@formily/core'
+import { Form } from '@formily-x/core'
 
 const FormContext = inject<Form>(FormSymbol)
 ```
@@ -27,7 +27,7 @@ const FormContext = inject<Form>(FormSymbol)
 #### 签名
 
 ```ts
-import { GeneralField } from '@formily/core'
+import { GeneralField } from '@formily-x/core'
 
 const FieldContext = inject<GeneralField>(FieldSymbol)
 ```

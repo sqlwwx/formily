@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import { createForm } from '@formily/core'
+import { createForm } from '@formily-x/core'
 import { FormProvider, ObjectField, VoidField, Field } from '../'
 import { FormConsumer } from '../components'
 import { useParentForm } from '../hooks'

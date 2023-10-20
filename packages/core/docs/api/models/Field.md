@@ -6,7 +6,7 @@ order: 1
 
 Call the Field model returned by [createField](/api/models/form#createfield).
 
-All model attributes are listed below. If the attribute is writable, then we can directly refer to it to modify the attribute, and @formily/reactive will respond to trigger the UI update.
+All model attributes are listed below. If the attribute is writable, then we can directly refer to it to modify the attribute, and @formily-x/reactive will respond to trigger the UI update.
 
 ## Attributes
 
@@ -796,7 +796,7 @@ type FieldDataSource<ValueType> = Array<{
 }>
 ```
 
-The field data source is actually an array. The form of the content is determined by the user, but we recommend that users express the data source in the form of label/value. It should be noted here that if it is to be used in the UI framework, it is not set directly. To be effective, the dataSource property must be bound to a specific UI component to be effective. For example, using @formily/react, if you want to bind the state, you can use the connect function, or you can directly get the field instance through useField in the component. consumption.
+The field data source is actually an array. The form of the content is determined by the user, but we recommend that users express the data source in the form of label/value. It should be noted here that if it is to be used in the UI framework, it is not set directly. To be effective, the dataSource property must be bound to a specific UI component to be effective. For example, using @formily-x/react, if you want to bind the state, you can use the connect function, or you can directly get the field instance through useField in the component. consumption.
 
 ### FieldValue
 

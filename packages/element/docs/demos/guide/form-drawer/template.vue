@@ -3,9 +3,9 @@
 </template>
 
 <script>
-import { FormDrawer, FormLayout, FormItem, Input } from '@formily/element'
+import { FormDrawer, FormLayout, FormItem, Input } from '@formily-x/element'
 import { Button } from 'element-ui'
-import { Field } from '@formily/vue'
+import { Field } from '@formily-x/vue'
 
 export default {
   components: { Button },

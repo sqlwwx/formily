@@ -1,7 +1,7 @@
-import { Grid, IGridOptions } from '@formily/grid'
-import { markRaw } from '@formily/reactive'
-import { observer } from '@formily/reactive-vue'
-import { h } from '@formily/vue'
+import { Grid, IGridOptions } from '@formily-x/grid'
+import { markRaw } from '@formily-x/reactive'
+import { observer } from '@formily-x/reactive-vue'
+import { h } from '@formily-x/vue'
 import {
   computed,
   defineComponent,

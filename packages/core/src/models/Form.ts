@@ -1,4 +1,4 @@
-import { define, observable, batch, action, observe } from '@formily/reactive'
+import { define, observable, batch, action, observe } from '@formily-x/reactive'
 import {
   FormPath,
   FormPathPattern,
@@ -9,7 +9,7 @@ import {
   isPlainObj,
   isArr,
   isObj,
-} from '@formily/shared'
+} from '@formily-x/shared'
 import { Heart } from './Heart'
 import { Field } from './Field'
 import {

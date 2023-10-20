@@ -6,7 +6,7 @@ order: 3
 
 ## Description
 
-As @formily/core's [createVoidField](https://core.formilyjs.org/api/models/form#createvoidfield) React implementation, it is a bridge component specifically used to bind ViewModel and virtual layout controls. Used to control the display and hide of data type fields, interactive mode, etc., VoidField component properties refer to [IVoidFieldFactoryProps](https://core.formilyjs.org/api/models/form#ivoidfieldfactoryprops)
+As @formily-x/core's [createVoidField](https://core.formilyjs.org/api/models/form#createvoidfield) React implementation, it is a bridge component specifically used to bind ViewModel and virtual layout controls. Used to control the display and hide of data type fields, interactive mode, etc., VoidField component properties refer to [IVoidFieldFactoryProps](https://core.formilyjs.org/api/models/form#ivoidfieldfactoryprops)
 
 <Alert>
 When we use the VoidField component, we must remember to pass the name attribute.
@@ -22,8 +22,8 @@ type VoidField = React.FC<React.PropsWithChildren<IVoidFieldFactoryProps>>
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { FormProvider, FormConsumer, Field, VoidField } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import { FormProvider, FormConsumer, Field, VoidField } from '@formily-x/react'
 import { Input, Button, Space } from 'antd'
 
 const form = createForm()

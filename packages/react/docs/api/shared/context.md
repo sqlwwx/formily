@@ -2,7 +2,7 @@
 
 ## Description
 
-All React Context of @formily/react is convenient for users to do more complex personalized customization. We can consume these contexts through useContext
+All React Context of @formily-x/react is convenient for users to do more complex personalized customization. We can consume these contexts through useContext
 
 ## FormContext
 
@@ -13,7 +13,7 @@ Form context, you can get the current Form instance
 #### Signature
 
 ```ts
-import { Form } from '@formily/core'
+import { Form } from '@formily-x/core'
 
 const FormContext = createContext<Form>(null)
 ```
@@ -27,7 +27,7 @@ Field context, you can get the current field instance
 #### Signature
 
 ```ts
-import { GeneralField } from '@formily/core'
+import { GeneralField } from '@formily-x/core'
 
 const FieldContext = createContext<GeneralField>(null)
 ```

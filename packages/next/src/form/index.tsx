@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { FormProvider, JSXComponent, useParentForm } from '@formily/react'
+import { FormProvider, JSXComponent, useParentForm } from '@formily-x/react'
 import { FormLayout, IFormLayoutProps } from '../form-layout'
 import { ConfigProvider } from '@alifd/next'
 import {
@@ -8,7 +8,7 @@ import {
   Form as FormType,
   ObjectField,
   IFormFeedback,
-} from '@formily/core'
+} from '@formily-x/core'
 import { PreviewText } from '../preview-text'
 export interface FormProps extends IFormLayoutProps {
   form?: FormType

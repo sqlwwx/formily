@@ -1,8 +1,8 @@
 import React, { startTransition, useState } from 'react'
 import ReactDOM from 'react-dom'
 import MySlowList from './MySlowList'
-import { observable } from '@formily/reactive'
-import { observer } from '@formily/reactive-react'
+import { observable } from '@formily-x/reactive'
+import { observer } from '@formily-x/reactive-react'
 
 const App = observer(function App() {
   const [text, setText] = useState('hello')

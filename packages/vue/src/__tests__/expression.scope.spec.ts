@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import { createForm } from '@formily/core'
+import { createForm } from '@formily-x/core'
 import { FormProvider, ExpressionScope, createSchemaField, h } from '..'
 import { defineComponent } from '@vue/composition-api'
 

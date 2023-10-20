@@ -26,7 +26,7 @@ footer: Open-source MIT Licensed | Copyright © 2019-present<br />Powered by sel
 
 ```bash
 $ npm install --save antd moment
-$ npm install --save @formily/core @formily/react @formily/antd
+$ npm install --save @formily-x/core @formily-x/react @formily-x/antd
 
 ```
 
@@ -37,9 +37,9 @@ $ npm install --save @formily/core @formily/react @formily/antd
  * defaultShowCode: true
  */
 import React from 'react'
-import { NumberPicker, FormItem, Space } from '@formily/antd'
-import { createForm } from '@formily/core'
-import { FormProvider, FormConsumer, Field } from '@formily/react'
+import { NumberPicker, FormItem, Space } from '@formily-x/antd'
+import { createForm } from '@formily-x/core'
+import { FormProvider, FormConsumer, Field } from '@formily-x/react'
 
 const form = createForm()
 

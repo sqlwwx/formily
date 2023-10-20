@@ -18,7 +18,7 @@ interface batch {
 ## 用例
 
 ```ts
-import { observable, autorun, batch } from '@formily/reactive'
+import { observable, autorun, batch } from '@formily-x/reactive'
 
 const obs = observable({})
 

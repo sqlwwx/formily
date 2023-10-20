@@ -1,5 +1,5 @@
 import { transformComponent } from '../__builtins__/shared'
-import { connect, mapProps, mapReadPretty } from '@formily/vue'
+import { connect, mapProps, mapReadPretty } from '@formily-x/vue'
 import { PreviewText } from '../preview-text'
 import type { TimePicker as ElTimePickerProps } from 'element-ui'
 import { TimePicker as ElTimePicker } from 'element-ui'

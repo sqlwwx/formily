@@ -6,10 +6,10 @@
 
 ```tsx
 import React from 'react'
-import { Cascader, FormItem, FormButtonGroup, Submit } from '@formily/next'
-import { createForm, onFieldReact, FormPathPattern } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
-import { action } from '@formily/reactive'
+import { Cascader, FormItem, FormButtonGroup, Submit } from '@formily-x/next'
+import { createForm, onFieldReact, FormPathPattern } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
+import { action } from '@formily-x/reactive'
 
 const SchemaField = createSchemaField({
   components: {
@@ -85,10 +85,10 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { Cascader, FormItem, FormButtonGroup, Submit } from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
-import { action } from '@formily/reactive'
+import { Cascader, FormItem, FormButtonGroup, Submit } from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
+import { action } from '@formily-x/reactive'
 
 const SchemaField = createSchemaField({
   components: {
@@ -171,10 +171,10 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { Cascader, FormItem, FormButtonGroup, Submit } from '@formily/next'
-import { createForm, onFieldReact, FormPathPattern } from '@formily/core'
-import { FormProvider, Field } from '@formily/react'
-import { action } from '@formily/reactive'
+import { Cascader, FormItem, FormButtonGroup, Submit } from '@formily-x/next'
+import { createForm, onFieldReact, FormPathPattern } from '@formily-x/core'
+import { FormProvider, Field } from '@formily-x/react'
+import { action } from '@formily-x/reactive'
 
 const useAddress = (pattern: FormPathPattern) => {
   const transform = (data = {}) => {

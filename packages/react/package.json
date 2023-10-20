@@ -1,5 +1,5 @@
 {
-  "name": "@formily/react",
+  "name": "@formily-x/react",
   "version": "2.2.30",
   "license": "MIT",
   "main": "lib",
@@ -47,12 +47,12 @@
     "dumi": "^1.1.0-rc.8"
   },
   "dependencies": {
-    "@formily/core": "2.2.30",
-    "@formily/json-schema": "2.2.30",
-    "@formily/reactive": "2.2.30",
-    "@formily/reactive-react": "2.2.30",
-    "@formily/shared": "2.2.30",
-    "@formily/validator": "2.2.30",
+    "@formily-x/core": "2.2.30",
+    "@formily-x/json-schema": "2.2.30",
+    "@formily-x/reactive": "2.2.30",
+    "@formily-x/reactive-react": "2.2.30",
+    "@formily-x/shared": "2.2.30",
+    "@formily-x/validator": "2.2.30",
     "hoist-non-react-statics": "^3.3.2"
   },
   "publishConfig": {

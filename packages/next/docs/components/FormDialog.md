@@ -6,8 +6,8 @@
 
 ```tsx
 import React from 'react'
-import { FormDialog, FormItem, Input, FormLayout } from '@formily/next'
-import { createSchemaField } from '@formily/react'
+import { FormDialog, FormItem, Input, FormLayout } from '@formily-x/next'
+import { createSchemaField } from '@formily-x/react'
 import { Button } from '@alifd/next'
 
 const SchemaField = createSchemaField({
@@ -78,8 +78,8 @@ export default () => {
 
 ```tsx
 import React from 'react'
-import { FormDialog, FormItem, Input, FormLayout } from '@formily/next'
-import { createSchemaField } from '@formily/react'
+import { FormDialog, FormItem, Input, FormLayout } from '@formily-x/next'
+import { createSchemaField } from '@formily-x/react'
 import { Button } from '@alifd/next'
 
 const SchemaField = createSchemaField({
@@ -155,8 +155,8 @@ export default () => {
 
 ```tsx
 import React from 'react'
-import { FormDialog, FormItem, Input, FormLayout } from '@formily/next'
-import { Field } from '@formily/react'
+import { FormDialog, FormItem, Input, FormLayout } from '@formily-x/next'
+import { Field } from '@formily-x/react'
 import { Button } from '@alifd/next'
 
 export default () => {
@@ -218,8 +218,8 @@ export default () => {
 
 ```tsx
 import React from 'react'
-import { FormDialog, FormItem, Input, FormLayout } from '@formily/next'
-import { Field } from '@formily/react'
+import { FormDialog, FormItem, Input, FormLayout } from '@formily-x/next'
+import { Field } from '@formily-x/react'
 import { Button, ConfigProvider } from '@alifd/next'
 
 export default () => {
@@ -297,7 +297,7 @@ export default () => {
 ### FormDialog
 
 ```ts pure
-import { IFormProps, Form } from '@formily/core'
+import { IFormProps, Form } from '@formily-x/core'
 
 type FormDialogRenderer =
   | React.ReactElement

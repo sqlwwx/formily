@@ -2,7 +2,7 @@
 
 ## Introduction
 
-@formily/next is a professional component library for form scenarios based on Fusion Design encapsulation. It has the following characteristics:
+@formily-x/next is a professional component library for form scenarios based on Fusion Design encapsulation. It has the following characteristics:
 
 - Only Formily 2.x is supported
   - Most components are not backward compatible
@@ -70,7 +70,7 @@ Because Fusion is built on Sass, if you use Webpack configuration, please use th
 
 ```bash
 $ npm install --save @alifd/next moment
-$ npm install --save @formily/next @formily/react
+$ npm install --save @formily-x/next @formily-x/react
 
 ```
 

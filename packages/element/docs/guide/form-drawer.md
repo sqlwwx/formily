@@ -19,7 +19,7 @@
 ### FormDrawer
 
 ```ts pure
-import { IFormProps, Form } from '@formily/core'
+import { IFormProps, Form } from '@formily-x/core'
 
 type FormDrawerContentProps = { form: Form }
 

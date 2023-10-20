@@ -1,7 +1,7 @@
-# @formily/next
+# @formily-x/next
 
 ### Install
 
 ```bash
-npm install --save @formily/next
+npm install --save @formily-x/next
 ```

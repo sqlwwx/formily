@@ -1,11 +1,11 @@
-# @formily/reactive-react
+# @formily-x/reactive-react
 
 ## QuikStart
 
 ```tsx
 import React from 'react'
-import { observable } from '@formily/reactive'
-import { observer } from '@formily/reactive-react'
+import { observable } from '@formily-x/reactive'
+import { observer } from '@formily-x/reactive-react'
 
 const obs = observable({
   count: 0,

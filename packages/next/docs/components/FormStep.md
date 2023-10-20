@@ -8,9 +8,9 @@
 
 ```tsx
 import React from 'react'
-import { FormStep, FormItem, Input, FormButtonGroup } from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, FormConsumer, createSchemaField } from '@formily/react'
+import { FormStep, FormItem, Input, FormButtonGroup } from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, FormConsumer, createSchemaField } from '@formily-x/react'
 import { Button } from '@alifd/next'
 
 const SchemaField = createSchemaField({
@@ -107,9 +107,9 @@ export default () => {
 
 ```tsx
 import React from 'react'
-import { FormStep, FormItem, Input, FormButtonGroup } from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, FormConsumer, createSchemaField } from '@formily/react'
+import { FormStep, FormItem, Input, FormButtonGroup } from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, FormConsumer, createSchemaField } from '@formily-x/react'
 import { Button } from '@alifd/next'
 
 const SchemaField = createSchemaField({
@@ -242,7 +242,7 @@ Refer to https://fusion.design/pc/component/basic/step Steps.Step properties
 ### FormStep.createFormStep
 
 ```ts pure
-import { Form } from '@formily/core'
+import { Form } from '@formily-x/core'
 
 interface createFormStep {
   (current?: number): IFormStep

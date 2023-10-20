@@ -1,6 +1,6 @@
 import moment from 'moment'
-import { connect, mapProps, mapReadPretty } from '@formily/react'
-import { isArr } from '@formily/shared'
+import { connect, mapProps, mapReadPretty } from '@formily-x/react'
+import { isArr } from '@formily-x/shared'
 import { DatePicker as AntdDatePicker } from 'antd'
 import {
   DatePickerProps as AntdDatePickerProps,

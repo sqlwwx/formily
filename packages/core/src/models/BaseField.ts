@@ -5,7 +5,7 @@ import {
   toArr,
   each,
   isFn,
-} from '@formily/shared'
+} from '@formily-x/shared'
 import {
   JSXComponent,
   LifeCycleTypes,

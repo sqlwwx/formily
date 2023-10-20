@@ -19,9 +19,9 @@ import {
   FormButtonGroup,
   Radio,
   Submit,
-} from '@formily/antd'
-import { createForm, onFieldValueChange } from '@formily/core'
-import { createSchemaField, FormConsumer } from '@formily/react'
+} from '@formily-x/antd'
+import { createForm, onFieldValueChange } from '@formily-x/core'
+import { createSchemaField, FormConsumer } from '@formily-x/react'
 
 const SchemaField = createSchemaField({
   components: {
@@ -96,9 +96,9 @@ import {
   FormButtonGroup,
   Radio,
   Submit,
-} from '@formily/antd'
-import { createForm } from '@formily/core'
-import { createSchemaField, FormConsumer } from '@formily/react'
+} from '@formily-x/antd'
+import { createForm } from '@formily-x/core'
+import { createSchemaField, FormConsumer } from '@formily-x/react'
 
 const SchemaField = createSchemaField({
   components: {
@@ -178,9 +178,9 @@ import {
   FormButtonGroup,
   Radio,
   Submit,
-} from '@formily/antd'
-import { createForm } from '@formily/core'
-import { Field, FormConsumer } from '@formily/react'
+} from '@formily-x/antd'
+import { createForm } from '@formily-x/core'
+import { Field, FormConsumer } from '@formily-x/react'
 
 const form = createForm()
 

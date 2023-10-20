@@ -1,5 +1,5 @@
 import { Schema } from '../'
-import { isFn } from '@formily/shared'
+import { isFn } from '@formily-x/shared'
 
 test('has methods', () => {
   const schema = new Schema({

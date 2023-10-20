@@ -1,6 +1,6 @@
 import React, { createContext } from 'react'
-import { Form, GeneralField } from '@formily/core'
-import { Schema } from '@formily/json-schema'
+import { Form, GeneralField } from '@formily-x/core'
+import { Schema } from '@formily-x/json-schema'
 import {
   ISchemaFieldReactFactoryOptions,
   SchemaReactComponents,

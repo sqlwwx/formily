@@ -1,11 +1,11 @@
 import React from 'react'
-import { ArrayField } from '@formily/core'
+import { ArrayField } from '@formily-x/core'
 import {
   useField,
   observer,
   useFieldSchema,
   RecursionField,
-} from '@formily/react'
+} from '@formily-x/react'
 import cls from 'classnames'
 import {
   SortableContainer,
@@ -13,7 +13,7 @@ import {
   SortableContainerProps,
   SortableElementProps,
 } from 'react-sortable-hoc'
-import { ISchema } from '@formily/json-schema'
+import { ISchema } from '@formily-x/json-schema'
 import { usePrefixCls } from '../__builtins__'
 import { ArrayBase, ArrayBaseMixins, IArrayBaseProps } from '../array-base'
 

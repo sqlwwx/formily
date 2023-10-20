@@ -95,8 +95,8 @@
 </template>
 
 <script>
-import { createForm, onFieldChange } from '@formily/core'
-import { createSchemaField } from '@formily/vue'
+import { createForm, onFieldChange } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/vue'
 import {
   Form,
   FormItem,
@@ -107,7 +107,7 @@ import {
   Switch,
   InputNumber,
   Radio,
-} from '@formily/element'
+} from '@formily-x/element'
 
 const Div = {
   functional: true,

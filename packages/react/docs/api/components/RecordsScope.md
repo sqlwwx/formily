@@ -23,14 +23,14 @@ type RecordsScope = React.FC<React.PropsWithChildren<IRecordsScopeProps>>
 ## Usage
 
 Any auto-incrementing list extension component should use RecordsScope internally to pass record scope variables. Components that have implemented this convention include:
-All components of the ArrayX family in @formily/antd and @formily/next
+All components of the ArrayX family in @formily-x/antd and @formily-x/next
 
 ## Custom component extension use case
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField, RecordsScope } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField, RecordsScope } from '@formily-x/react'
 import { Input } from 'antd'
 
 const form = createForm()

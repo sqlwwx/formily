@@ -1,7 +1,7 @@
 import { inject, provide, watch, shallowRef, computed, markRaw } from 'vue-demi'
-import { GeneralField } from '@formily/core'
-import { isFn, isValid, lazyMerge } from '@formily/shared'
-import { Schema } from '@formily/json-schema'
+import { GeneralField } from '@formily-x/core'
+import { isFn, isValid, lazyMerge } from '@formily-x/shared'
+import { Schema } from '@formily-x/json-schema'
 import {
   SchemaSymbol,
   SchemaOptionsSymbol,

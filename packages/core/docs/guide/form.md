@@ -71,7 +71,7 @@ The data model mainly includes:
 - Field default value (initialValue) management
 - Value and default value selection merge strategy
 
-Form value management is actually the values attribute of an object structure, but it is an @formily/reactive observable attribute. At the same time, with the help of @formily/reactive's deep observer capability, it monitors any attribute changes, and if it changes, it will trigger The life cycle hook of onFormValuesChange.
+Form value management is actually the values attribute of an object structure, but it is an @formily-x/reactive observable attribute. At the same time, with the help of @formily-x/reactive's deep observer capability, it monitors any attribute changes, and if it changes, it will trigger The life cycle hook of onFormValuesChange.
 
 In the same way, the default value management is actually the initialValues property of an object structure. It will also deeply monitor property changes and trigger the onFormInitialValues life cycle hook.
 
@@ -151,4 +151,4 @@ The path system is very important. The path system is used everywhere in almost 
 - It can be used to express the model of the relationship between the fields. With the help of the path system, we can find the father of a certain field, can find the father, and can also realize the data inheritance ability of the tree level. Similarly, we can also find the data of a certain field. Adjacent node
 - It can be used to read and write field data, read and write data with deconstruction
 
-The entire path system is actually implemented based on the path DSL of @formily/path. If you want to know more about the path system, you can take a look at [FormPath API](/api/entry/form-path) in detail
+The entire path system is actually implemented based on the path DSL of @formily-x/path. If you want to know more about the path system, you can take a look at [FormPath API](/api/entry/form-path) in detail

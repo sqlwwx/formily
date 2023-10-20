@@ -59,8 +59,8 @@ ISchema 参考 [ISchema](/api/shared/schema#ischema)
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 import { Input, Select } from 'antd'
 
 const form = createForm()
@@ -98,8 +98,8 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 import { Input, Select } from 'antd'
 
 const form = createForm()

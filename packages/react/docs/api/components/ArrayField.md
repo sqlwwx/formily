@@ -6,7 +6,7 @@ order: 1
 
 ## Description
 
-As @formily/core's [createArrayField](https://core.formilyjs.org/api/models/form#createarrayfield) React implementation, it is a bridge component specifically used to bind ViewModel and input controls, ArrayField component Property reference [IFieldFactoryProps](https://core.formilyjs.org/api/models/form#ifieldfactoryprops)
+As @formily-x/core's [createArrayField](https://core.formilyjs.org/api/models/form#createarrayfield) React implementation, it is a bridge component specifically used to bind ViewModel and input controls, ArrayField component Property reference [IFieldFactoryProps](https://core.formilyjs.org/api/models/form#ifieldfactoryprops)
 
 <Alert>
 When we use the ArrayField component, we must remember to pass the name attribute. At the same time, use render props to organize sub-components
@@ -22,14 +22,14 @@ type ArrayField = React.FC<React.PropsWithChildren<IFieldFactoryProps>>
 
 ```tsx
 import React from 'react'
-import { createForm, ArrayField as ArrayFieldType } from '@formily/core'
+import { createForm, ArrayField as ArrayFieldType } from '@formily-x/core'
 import {
   FormProvider,
   Field,
   ArrayField,
   useField,
   observer,
-} from '@formily/react'
+} from '@formily-x/react'
 import { Input, Button, Space } from 'antd'
 
 const form = createForm()
@@ -90,8 +90,8 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { FormProvider, Field, ArrayField } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import { FormProvider, Field, ArrayField } from '@formily-x/react'
 import { Input, Button, Space } from 'antd'
 
 const form = createForm()

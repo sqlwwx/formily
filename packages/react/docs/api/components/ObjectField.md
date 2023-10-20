@@ -6,7 +6,7 @@ order: 2
 
 ## Description
 
-As @formily/core's [createObjectField](https://core.formilyjs.org/api/models/form#createobjectfield) React implementation, it is a bridge component specifically used to bind ViewModel and input controls, ObjectField component Property reference [IFieldFactoryProps](https://core.formilyjs.org/api/models/form#ifieldfactoryprops)
+As @formily-x/core's [createObjectField](https://core.formilyjs.org/api/models/form#createobjectfield) React implementation, it is a bridge component specifically used to bind ViewModel and input controls, ObjectField component Property reference [IFieldFactoryProps](https://core.formilyjs.org/api/models/form#ifieldfactoryprops)
 
 <Alert>
 When we use the ObjectField component, we must remember to pass the name attribute. At the same time, use render props to organize sub-components
@@ -22,14 +22,14 @@ type ObjectField = React.FC<React.PropsWithChildren<IFieldFactoryProps>>
 
 ```tsx
 import React from 'react'
-import { createForm, ObjectField as ObjectFieldType } from '@formily/core'
+import { createForm, ObjectField as ObjectFieldType } from '@formily-x/core'
 import {
   FormProvider,
   Field,
   ObjectField,
   useField,
   observer,
-} from '@formily/react'
+} from '@formily-x/react'
 import { Input, Button, Space } from 'antd'
 
 const form = createForm()
@@ -88,8 +88,8 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { FormProvider, Field, ObjectField } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import { FormProvider, Field, ObjectField } from '@formily-x/react'
 import { Input, Button, Space } from 'antd'
 
 const form = createForm()

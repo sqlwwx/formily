@@ -1,6 +1,6 @@
 # 最佳实践
 
-在使用@formily/reactive 的时候，我们只需要注意以下几点即可：
+在使用@formily-x/reactive 的时候，我们只需要注意以下几点即可：
 
 - 尽量少用 observable/observable.deep 进行深度包装，不是非不得已就多用 observable.ref/observable.shallow，这样性能会更好
 - 领域模型中多用 computed 计算属性，它可以智能缓存计算结果

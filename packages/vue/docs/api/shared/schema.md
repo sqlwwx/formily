@@ -2,13 +2,13 @@
 
 ## 描述
 
-@formily/vue 协议驱动最核心的部分，Schema 在其中是一个通用 Class，用户可以自行使用，同时在 SchemaField 和 RecursionField 中都有依赖它，它主要有几个核心能力：
+@formily-x/vue 协议驱动最核心的部分，Schema 在其中是一个通用 Class，用户可以自行使用，同时在 SchemaField 和 RecursionField 中都有依赖它，它主要有几个核心能力：
 
 - 解析 json-schema 的能力
 - 将 json-schema 转换成 Field Model 的能力
 - 编译 json-schema 表达式的能力
 
-从@formily/vue 中可以导出 Schema 这个 Class，但是如果你不希望使用@formily/vue，你可以单独依赖@formily/json-schema 这个包
+从@formily-x/vue 中可以导出 Schema 这个 Class，但是如果你不希望使用@formily-x/vue，你可以单独依赖@formily-x/json-schema 这个包
 
 ## 构造器
 
@@ -330,7 +330,7 @@ interface toJSON {
 #### 签名
 
 ```ts
-import { IFieldFactoryProps } from '@formily/core'
+import { IFieldFactoryProps } from '@formily-x/core'
 
 interface toFieldProps {
   (): IFieldFactoryProps
@@ -458,7 +458,7 @@ interface registerVoidComponents {
 #### 用例
 
 ```ts
-import { Schema } from '@formily/react'
+import { Schema } from '@formily-x/react'
 
 Schema.registerVoidComponents(['card', 'tab', 'step'])
 ```
@@ -485,7 +485,7 @@ interface registerTypeDefaultComponents {
 #### 用例
 
 ```ts
-import { Schema } from '@formily/vue'
+import { Schema } from '@formily-x/vue'
 
 Schema.registerTypeDefaultComponents({
   string: 'Input',
@@ -515,7 +515,7 @@ interface registerPolyfills {
 #### 用例
 
 ```ts
-import { Schema } from '@formily/react'
+import { Schema } from '@formily-x/react'
 
 Schema.registerPolyfills('1.0', (schema) => {
   schema['x-decorator'] = 'FormItem'
@@ -548,7 +548,7 @@ interface enablePolyfills {
 #### 用例
 
 ```ts
-import { Schema } from '@formily/vue'
+import { Schema } from '@formily-x/vue'
 
 Schema.enablePolyfills(['1.0'])
 ```
@@ -634,7 +634,7 @@ FormPathPattern 路径语法文档看[这里](https://core.formilyjs.org/zh-CN/a
 #### 签名
 
 ```ts
-import { IGeneralFieldState } from '@formily/core'
+import { IGeneralFieldState } from '@formily-x/core'
 
 type SchemaReactionEffect =
   | 'onFieldInit'

@@ -1,6 +1,6 @@
 # 核心概念
 
-@formily/react 本身架构不复杂，因为它只是提供了一系列的组件和 Hooks 给用户使用，但是我们还是需要理解以下几个概念：
+@formily-x/react 本身架构不复杂，因为它只是提供了一系列的组件和 Hooks 给用户使用，但是我们还是需要理解以下几个概念：
 
 - 表单上下文
 - 字段上下文
@@ -11,7 +11,7 @@
 
 ## 表单上下文
 
-从[架构图](/guide/architecture)中我们可以看到 FormProvider 是作为表单统一上下文而存在，它的地位非常重要，主要用于将@formily/core 创建出来的[Form](//core.formilyjs.org/zh-CN/api/models/form)实例下发到所有子组件中，不管是在内置组件还是用户扩展的组件，都能通过[useForm](/api/hooks/use-form)读取到[Form](//core.formilyjs.org/zh-CN/api/models/form)实例
+从[架构图](/guide/architecture)中我们可以看到 FormProvider 是作为表单统一上下文而存在，它的地位非常重要，主要用于将@formily-x/core 创建出来的[Form](//core.formilyjs.org/zh-CN/api/models/form)实例下发到所有子组件中，不管是在内置组件还是用户扩展的组件，都能通过[useForm](/api/hooks/use-form)读取到[Form](//core.formilyjs.org/zh-CN/api/models/form)实例
 
 ## 字段上下文
 
@@ -27,11 +27,11 @@
 
 ![](https://img.alicdn.com/imgextra/i1/O1CN01A03C191KwT1raxnDg_!!6000000001228-55-tps-2200-869.svg)
 
-在 Formily 中，@formily/core 就是 ViewModel，Component 和 Decorator 就是 View，@formily/react 就是将 ViewModel 和 View 绑定起来的胶水层，ViewModel 和 View 的绑定就叫做模型绑定，实现模型绑定的手段主要有[useField](/api/hooks/use-field)，也能使用[connect](/api/shared/connect)和[mapProps](/api/shared/map-props)，需要注意的是，Component 只需要支持 value/onChange 属性即可自动实现数据层的双向绑定。
+在 Formily 中，@formily-x/core 就是 ViewModel，Component 和 Decorator 就是 View，@formily-x/react 就是将 ViewModel 和 View 绑定起来的胶水层，ViewModel 和 View 的绑定就叫做模型绑定，实现模型绑定的手段主要有[useField](/api/hooks/use-field)，也能使用[connect](/api/shared/connect)和[mapProps](/api/shared/map-props)，需要注意的是，Component 只需要支持 value/onChange 属性即可自动实现数据层的双向绑定。
 
 ## 协议驱动
 
-协议驱动渲染算是@formily/react 中学习成本最高的部分了，但是学会了之后，它给业务带来的收益也是很高，总共需要理解 4 个核心概念：
+协议驱动渲染算是@formily-x/react 中学习成本最高的部分了，但是学会了之后，它给业务带来的收益也是很高，总共需要理解 4 个核心概念：
 
 - Schema
 - 递归渲染
@@ -91,7 +91,7 @@ formily 的协议驱动主要是基于标准 JSON Schema 来进行驱动渲染�
 }
 ```
 
-@formily/react 递归渲染的入口是[SchemaField](/api/components/schema-field)，但它内部实际是使用 [RecursionField](/api/components/recursion-field) 来渲染的，因为 JSON-Schema 就是一个递归型结构，所以 [RecursionField](/api/components/recursion-field) 在渲染的时候会从顶层 Schema 节点解析，如果是非 object 和 array 类型则直接渲染具体组件，如果是 object，则会遍历 properties 继续用 [RecursionField](/api/components/recursion-field) 渲染子级 Schema 节点。
+@formily-x/react 递归渲染的入口是[SchemaField](/api/components/schema-field)，但它内部实际是使用 [RecursionField](/api/components/recursion-field) 来渲染的，因为 JSON-Schema 就是一个递归型结构，所以 [RecursionField](/api/components/recursion-field) 在渲染的时候会从顶层 Schema 节点解析，如果是非 object 和 array 类型则直接渲染具体组件，如果是 object，则会遍历 properties 继续用 [RecursionField](/api/components/recursion-field) 渲染子级 Schema 节点。
 
 这里有点特殊的情况是 array 类型的自增列表渲染，需要用户在自定义组件内使用[RecursionField](/api/components/recursion-field)进行递归渲染，因为自增列表的 UI 个性化定制程度很高，所以就把递归渲染权交给用户来渲染了，这样设计也能让协议驱动渲染变得更加灵活。
 
@@ -106,11 +106,11 @@ formily 的协议驱动主要是基于标准 JSON Schema 来进行驱动渲染�
 
 ![](https://img.alicdn.com/imgextra/i3/O1CN01jLCRxH1aa3V0x6nw4_!!6000000003345-55-tps-2200-1147.svg)
 
-总结下来，在@formily/react 中，主要有 2 层绑定关系，Schema 绑定模型，模型绑定组件，实现绑定的胶水层就是@formily/react，需要注意的是，Schema 绑定字段模型之后，字段模型中是感知不到 Schema 的，比如要修改`enum`，就是修改字段模型中的`dataSource`属性了，总之，想要更新字段模型，参考[Field](//core.formilyjs.org/zh-CN/api/models/field)，想要理解 Schema 与字段模型的映射关系可以参考[Schema](/api/shared/schema)文档
+总结下来，在@formily-x/react 中，主要有 2 层绑定关系，Schema 绑定模型，模型绑定组件，实现绑定的胶水层就是@formily-x/react，需要注意的是，Schema 绑定字段模型之后，字段模型中是感知不到 Schema 的，比如要修改`enum`，就是修改字段模型中的`dataSource`属性了，总之，想要更新字段模型，参考[Field](//core.formilyjs.org/zh-CN/api/models/field)，想要理解 Schema 与字段模型的映射关系可以参考[Schema](/api/shared/schema)文档
 
 ## 三种开发模式
 
-从[架构图](/guide/architecture)中我们其实已经看到整个@formily/react 是有三种开发模式的，对应不同用户：
+从[架构图](/guide/architecture)中我们其实已经看到整个@formily-x/react 是有三种开发模式的，对应不同用户：
 
 - JSX 开发模式
 - JSON Schema 开发模式
@@ -124,8 +124,8 @@ formily 的协议驱动主要是基于标准 JSON Schema 来进行驱动渲染�
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { FormProvider, Field } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import { FormProvider, Field } from '@formily-x/react'
 import { Input } from 'antd'
 
 const form = createForm()
@@ -143,8 +143,8 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 import { Input } from 'antd'
 
 const form = createForm()
@@ -189,8 +189,8 @@ Markup Schema 模式主要有以下几个特点：
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 import { Input } from 'antd'
 
 const form = createForm()

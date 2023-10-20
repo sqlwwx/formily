@@ -1,13 +1,13 @@
-import { ArrayField } from '@formily/core'
-import { ISchema } from '@formily/json-schema'
-import { observer } from '@formily/reactive-vue'
+import { ArrayField } from '@formily-x/core'
+import { ISchema } from '@formily-x/json-schema'
+import { observer } from '@formily-x/reactive-vue'
 import {
   Fragment,
   h,
   RecursionField,
   useField,
   useFieldSchema,
-} from '@formily/vue'
+} from '@formily-x/vue'
 import type {
   Collapse as CollapseProps,
   CollapseItem as CollapseItemProps,

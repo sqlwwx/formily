@@ -4,7 +4,7 @@ Formily 2.x has given up supporting controlled mode for form components and fiel
 
 So Formily no longer supports the controlled mode, but if we insist on implementing ordinary React controlled, we can still support it. It can only achieve value control, not field-level control, which is the Field component we use. The properties will only take effect during the first rendering. Any changes to the properties in the future will not be automatically updated. If you want to update automatically, unless you recreate the Form instance (obviously this will lose all the previously maintained state).
 
-Therefore, we more recommend using [@formily/reactive](https://reactive.formilyjs.org) to achieve responsive control, which can achieve both value control and field-level control.
+Therefore, we more recommend using [@formily-x/reactive](https://reactive.formilyjs.org) to achieve responsive control, which can achieve both value control and field-level control.
 
 ## Value Controlled
 
@@ -12,9 +12,9 @@ Ordinary controlled mode, which will rely heavily on dirty checking to achieve d
 
 ```tsx
 import React, { useMemo, useState, useEffect, useRef } from 'react'
-import { createForm, onFormValuesChange } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input } from '@formily/antd'
+import { createForm, onFormValuesChange } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input } from '@formily-x/antd'
 
 const SchemaField = createSchemaField({
   components: {
@@ -85,15 +85,15 @@ export default () => {
 
 ## Responsive Value Controlled
 
-Responsive control is mainly to use [@formily/reactive](https://reactive.formilyjs.org) to achieve responsive updates, we can easily achieve two-way binding, while the performance is full of normal controlled updates.
+Responsive control is mainly to use [@formily-x/reactive](https://reactive.formilyjs.org) to achieve responsive updates, we can easily achieve two-way binding, while the performance is full of normal controlled updates.
 
 ```tsx
 import React, { useMemo, useRef } from 'react'
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input } from '@formily/antd'
-import { observable } from '@formily/reactive'
-import { observer } from '@formily/reactive-react'
+import { createForm } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input } from '@formily-x/antd'
+import { observable } from '@formily-x/reactive'
+import { observer } from '@formily-x/reactive-react'
 
 const SchemaField = createSchemaField({
   components: {
@@ -166,9 +166,9 @@ There will be a requirement for the form configuration scenario. The Schema of t
 
 ```tsx
 import React, { useMemo, useState } from 'react'
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input, Select } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input, Select } from '@formily-x/antd'
 import { Button, Space } from 'antd'
 
 const SchemaField = createSchemaField({
@@ -251,9 +251,9 @@ The most important thing for fragment linkage is to manually clean up the field 
 
 ```tsx
 import React, { useMemo, useRef } from 'react'
-import { createForm } from '@formily/core'
-import { createSchemaField, observer } from '@formily/react'
-import { Form, FormItem, Input, Select } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { createSchemaField, observer } from '@formily-x/react'
+import { Form, FormItem, Input, Select } from '@formily-x/antd'
 
 const SchemaField = createSchemaField({
   components: {
@@ -346,15 +346,15 @@ export default observer(() => {
 
 ```tsx
 import React, { useMemo, useState, useEffect } from 'react'
-import { createForm } from '@formily/core'
+import { createForm } from '@formily-x/core'
 import {
   createSchemaField,
   RecursionField,
   useForm,
   useField,
   observer,
-} from '@formily/react'
-import { Form, FormItem, Input, Select } from '@formily/antd'
+} from '@formily-x/react'
+import { Form, FormItem, Input, Select } from '@formily-x/antd'
 
 const Custom = observer(() => {
   const field = useField()
@@ -463,15 +463,15 @@ export default observer(() => {
 
 ### Best Practices
 
-It is recommended to use [@formily/reactive](https://reactive.formilyjs.org) to achieve responsive control.
+It is recommended to use [@formily-x/reactive](https://reactive.formilyjs.org) to achieve responsive control.
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input } from '@formily/antd'
-import { observable } from '@formily/reactive'
-import { observer } from '@formily/reactive-react'
+import { createForm } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input } from '@formily-x/antd'
+import { observable } from '@formily-x/reactive'
+import { observer } from '@formily-x/reactive-react'
 
 const SchemaField = createSchemaField({
   components: {
@@ -528,9 +528,9 @@ It is not possible to update automatically when using traditional controlled mod
 
 ```tsx
 import React, { useState } from 'react'
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/react'
-import { Form, FormItem, Input } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/react'
+import { Form, FormItem, Input } from '@formily-x/antd'
 
 const SchemaField = createSchemaField({
   components: {

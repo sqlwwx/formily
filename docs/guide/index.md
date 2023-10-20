@@ -47,7 +47,7 @@ Historical experience is always helpful to mankind. Decades ago, humans created 
 
 It just so happened that the github community abstracted a state management solution called Mobx for such MVVM models. The core capabilities of [Mobx](https://github.com/mobxjs/mobx) are its dependency tracking mechanism and the abstraction capabilities of responsive models.
 
-Therefore, with the help of Mobx, the O(n) problem in the form field input process can be completely solved, and it can be solved very elegantly. However, during the implementation of Formily 2.x, it was discovered that Mobx still has some problems that are not compatible with Formily's core ideas. In the end, we only can reinvent one wheel,[@formily/reactive](https://reactive.formilyjs.org) which continues the core idea of Mobx.
+Therefore, with the help of Mobx, the O(n) problem in the form field input process can be completely solved, and it can be solved very elegantly. However, during the implementation of Formily 2.x, it was discovered that Mobx still has some problems that are not compatible with Formily's core ideas. In the end, we only can reinvent one wheel,[@formily-x/reactive](https://reactive.formilyjs.org) which continues the core idea of Mobx.
 
 Mention here [react-hook-form](https://github.com/react-hook-form/react-hook-form) , Very popular, known as the industry’s top performance form solution, let’s take a look at its simplest case:
 
@@ -115,7 +115,7 @@ Regarding accurate rendering, we have determined that we can choose a Reactive s
 
 ### Path System
 
-The field model in the form domain model was mentioned earlier. If the design is more complete, it is not only a field model, but also a form model as the top-level model. The top-level model manages all the field models, and each field has its own Path. How to find these fields? The linkage relationship mentioned earlier is more of a passive dependency, but in some scenarios, we just need to modify the state of a field based on an asynchronous event action. Here is how to find a field elegantly. The same It has also undergone a lot of trial and error and correction. Formily's original path system @formily/path solves this problem very well. It not only makes the field lookup elegant, but it can also deal with the disgusting problem of inconsistent front-end and back-end data structures through destructuring expressions.
+The field model in the form domain model was mentioned earlier. If the design is more complete, it is not only a field model, but also a form model as the top-level model. The top-level model manages all the field models, and each field has its own Path. How to find these fields? The linkage relationship mentioned earlier is more of a passive dependency, but in some scenarios, we just need to modify the state of a field based on an asynchronous event action. Here is how to find a field elegantly. The same It has also undergone a lot of trial and error and correction. Formily's original path system @formily-x/path solves this problem very well. It not only makes the field lookup elegant, but it can also deal with the disgusting problem of inconsistent front-end and back-end data structures through destructuring expressions.
 
 ### Life Cycle
 
@@ -261,7 +261,7 @@ It can be seen that our linkage is actually based on:
 - Condition-satisfied action
 - Unsatisfied action
 
-To achieve. Because the internal state management uses the [@formily/reactive](https://reactive.formilyjs.org) solution similar to Mobx, Formily easily realizes passive and active linkage scenarios, covering most business needs.
+To achieve. Because the internal state management uses the [@formily-x/reactive](https://reactive.formilyjs.org) solution similar to Mobx, Formily easily realizes passive and active linkage scenarios, covering most business needs.
 
 Therefore, our form can be described by protocol, and it can be configurable no matter how complicated the layout is or the linkage is very complicated.
 
@@ -276,7 +276,7 @@ This picture mainly divides Formily into the kernel layer, UI bridge layer, exte
 The kernel layer is UI-independent. It ensures that the logic and state of user management are not coupled to any framework. This has several advantages:
 
 - Logic and UI framework are decoupled, and framework-level migration will be done in the future, without extensive refactoring of business code.
-- The learning cost is uniform. If the user uses @formily/react, the business will be migrated to @formily/vue in the future, and the user does not need to learn again.
+- The learning cost is uniform. If the user uses @formily-x/react, the business will be migrated to @formily-x/vue in the future, and the user does not need to learn again.
 
 JSON Schema exists independently and is consumed by the UI bridging layer, ensuring the absolute consistency of protocol drivers under different UI frameworks, and there is no need to repeatedly implement protocol parsing logic.
 
@@ -488,9 +488,9 @@ export default () => {
 
 ## Q/A
 
-Q: Now that I have Vue, why do I still need to provide @formily/vue?
+Q: Now that I have Vue, why do I still need to provide @formily-x/vue?
 
-Answer: Vue is a UI framework. The problem it solves is a wider range of UI problems. Although its reactive ability is outstanding in form scenarios, at least it is more convenient than native React to write forms, but if it is in more complex form scenarios , We still need to do a lot of abstraction and encapsulation, so @formily/vue is to help you do these abstract encapsulation things, really let you develop super-complex form applications efficiently and conveniently.
+Answer: Vue is a UI framework. The problem it solves is a wider range of UI problems. Although its reactive ability is outstanding in form scenarios, at least it is more convenient than native React to write forms, but if it is in more complex form scenarios , We still need to do a lot of abstraction and encapsulation, so @formily-x/vue is to help you do these abstract encapsulation things, really let you develop super-complex form applications efficiently and conveniently.
 
 Q: What is the biggest advantage of Formily2.x compared to 1.x?
 

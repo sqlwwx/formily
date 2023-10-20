@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useContext, useState } from 'react'
 import cls from 'classnames'
 import { usePrefixCls, pickDataProps } from '../__builtins__'
-import { isVoidField } from '@formily/core'
-import { connect, mapProps } from '@formily/react'
+import { isVoidField } from '@formily-x/core'
+import { connect, mapProps } from '@formily-x/react'
 import { useFormLayout, FormLayoutShallowContext } from '../form-layout'
 import { Tooltip, Popover, ConfigProvider } from 'antd'
 import {

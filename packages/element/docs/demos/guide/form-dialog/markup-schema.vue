@@ -5,9 +5,9 @@
 </template>
 
 <script>
-import { FormDialog, FormLayout, FormItem, Input } from '@formily/element'
+import { FormDialog, FormLayout, FormItem, Input } from '@formily-x/element'
 import { Button } from 'element-ui'
-import { createSchemaField } from '@formily/vue'
+import { createSchemaField } from '@formily-x/vue'
 
 const { SchemaField, SchemaStringField } = createSchemaField({
   components: {

@@ -6,7 +6,7 @@ order: 4
 
 Call the VoidField model returned by [createVoidField](/api/models/form#createvoidfield).
 
-All model attributes are listed below. If the attribute is writable, then we can directly refer to it to modify the attribute, and @formily/reactive will respond to trigger the UI update.
+All model attributes are listed below. If the attribute is writable, then we can directly refer to it to modify the attribute, and @formily-x/reactive will respond to trigger the UI update.
 
 ## Attributes
 

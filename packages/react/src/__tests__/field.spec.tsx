@@ -1,13 +1,13 @@
 import React from 'react'
 import { act } from 'react-dom/test-utils'
 import { render, fireEvent, waitFor } from '@testing-library/react'
-import { createForm, onFieldUnmount, isArrayField } from '@formily/core'
+import { createForm, onFieldUnmount, isArrayField } from '@formily-x/core'
 import {
   isField,
   Field as FieldType,
   isVoidField,
   onFieldChange,
-} from '@formily/core'
+} from '@formily-x/core'
 import {
   FormProvider,
   ArrayField,

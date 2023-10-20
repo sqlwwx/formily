@@ -6,9 +6,9 @@
 
 ```tsx
 import React from 'react'
-import { Transfer, FormItem, FormButtonGroup, Submit } from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+import { Transfer, FormItem, FormButtonGroup, Submit } from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 
 const SchemaField = createSchemaField({
   components: {
@@ -44,9 +44,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { Transfer, FormItem, FormButtonGroup, Submit } from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+import { Transfer, FormItem, FormButtonGroup, Submit } from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 
 const SchemaField = createSchemaField({
   components: {
@@ -89,9 +89,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { Transfer, FormItem, FormButtonGroup, Submit } from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, Field } from '@formily/react'
+import { Transfer, FormItem, FormButtonGroup, Submit } from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, Field } from '@formily-x/react'
 
 const form = createForm()
 

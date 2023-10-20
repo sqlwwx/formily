@@ -16,8 +16,8 @@ Issue List 专用于跟踪错误报告和功能请求。 这意味着我们不�
 
 ```tsx
 import React from 'react'
-import { createForm, onFieldMount, onFieldReact } from '@formily/core'
-import { Field, VoidField } from '@formily/react'
+import { createForm, onFieldMount, onFieldReact } from '@formily-x/core'
+import { Field, VoidField } from '@formily-x/react'
 import {
   Form,
   Input,
@@ -26,7 +26,7 @@ import {
   FormItem,
   FormButtonGroup,
   Submit,
-} from '@formily/antd'
+} from '@formily-x/antd'
 import semver from 'semver'
 import ReactMde from 'react-mde'
 import * as Showdown from 'showdown'
@@ -65,7 +65,7 @@ const form = createForm({
   effects() {
     onFieldMount('version', async (field) => {
       const { versions: unsort } = await fetch(
-        'https://registry.npmmirror.com/@formily/core'
+        'https://registry.npmmirror.com/@formily-x/core'
       ).then((res) => res.json())
 
       const versions = Object.keys(unsort).sort((v1, v2) =>

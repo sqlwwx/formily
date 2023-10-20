@@ -1,4 +1,4 @@
-import { unstable_useCompatEffect } from '@formily/reactive-react'
+import { unstable_useCompatEffect } from '@formily-x/reactive-react'
 interface IRecycleTarget {
   onMount: () => void
   onUnmount: () => void

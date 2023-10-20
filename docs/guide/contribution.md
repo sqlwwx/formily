@@ -77,35 +77,35 @@ $ yarn start
 Core project documentation
 
 ```bash
-$ yarn workspace @formily/core start
+$ yarn workspace @formily-x/core start
 ```
 
 React project documentation
 
 ```bash
-$ yarn workspace @formily/react start
+$ yarn workspace @formily-x/react start
 ```
 
 Vue project documentation
 
 ```bash
-$ yarn workspace @formily/vue start
+$ yarn workspace @formily-x/vue start
 ```
 
 Antd project documentation
 
 ```bash
-$ yarn workspace @formily/antd start
+$ yarn workspace @formily-x/antd start
 ```
 
 Fusion project documentation
 
 ```bash
-$ yarn workspace @formily/next start
+$ yarn workspace @formily-x/next start
 ```
 
 Reactive project documentation
 
 ```bash
-$ yarn workspace @formily/reactive start
+$ yarn workspace @formily-x/reactive start
 ```

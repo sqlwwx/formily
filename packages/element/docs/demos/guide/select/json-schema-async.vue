@@ -6,10 +6,10 @@
 </template>
 
 <script>
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/vue'
-import { action } from '@formily/reactive'
-import { Form, FormItem, Select, Submit, Reset } from '@formily/element'
+import { createForm } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/vue'
+import { action } from '@formily-x/reactive'
+import { Form, FormItem, Select, Submit, Reset } from '@formily-x/element'
 
 const schema = {
   type: 'object',

@@ -1,6 +1,6 @@
 # Introduction
 
-The core idea of @formily/reactive is to refer to [Mobx](https://mobx.js.org/), so why reinvent the wheel?
+The core idea of @formily-x/reactive is to refer to [Mobx](https://mobx.js.org/), so why reinvent the wheel?
 
 There are four main reasons:
 

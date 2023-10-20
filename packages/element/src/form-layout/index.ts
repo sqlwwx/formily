@@ -1,4 +1,4 @@
-import { h } from '@formily/vue'
+import { h } from '@formily-x/vue'
 import {
   defineComponent,
   inject,

@@ -58,14 +58,14 @@
 
 <script>
 import { defineComponent, ref, onUnmounted } from 'vue-demi'
-import { createForm } from '@formily/core'
+import { createForm } from '@formily-x/core'
 import {
   createSchemaField,
   FormProvider,
   FragmentComponent,
-} from '@formily/vue'
-import { autorun } from '@formily/reactive'
-import { observer } from '@formily/reactive-vue'
+} from '@formily-x/vue'
+import { autorun } from '@formily-x/reactive'
+import { observer } from '@formily-x/reactive-vue'
 import {
   Form,
   Input,
@@ -76,7 +76,7 @@ import {
   Submit,
   Reset,
   FormButtonGroup,
-} from '@formily/element'
+} from '@formily-x/element'
 
 const useCollapseGrid = (maxRows) => {
   const grid = FormGrid.createFormGrid({

@@ -1,5 +1,5 @@
-import { Form } from '@formily/core'
-import { FormProvider as _FormProvider, createForm } from '@formily/vue'
+import { Form } from '@formily-x/core'
+import { FormProvider as _FormProvider, createForm } from '@formily-x/vue'
 import type { Form as _ElFormProps } from 'element-ui'
 import type { FunctionalComponentOptions, Component } from 'vue'
 import { Form as ElFormComponent } from 'element-ui'

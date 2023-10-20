@@ -1,15 +1,15 @@
 import React, { Fragment, useState } from 'react'
 import { Tabs, Badge } from 'antd'
-import { ArrayField } from '@formily/core'
+import { ArrayField } from '@formily-x/core'
 import {
   useField,
   observer,
   useFieldSchema,
   RecursionField,
   ReactFC,
-} from '@formily/react'
+} from '@formily-x/react'
 import { TabsProps } from 'antd/lib/tabs'
-import { clone } from '@formily/shared'
+import { clone } from '@formily-x/shared'
 export interface ArrayTabsProps extends TabsProps {
   copy?: boolean
 }
@@ -41,70 +41,71 @@ const FeedbackBadge: ReactFC<IFeedbackBadgeProps> = observer(
   }
 )
 
-export const ArrayTabs: React.FC<React.PropsWithChildren<ArrayTabsProps>> = observer(
-  (props) => {
-    const { copy, ...tabsProps } = props
-    const field = useField<ArrayField>()
-    const schema = useFieldSchema()
-    const [activeKey, setActiveKey] = useState('tab-0')
-    const value = Array.isArray(field.value) ? field.value : []
-    const dataSource = value?.length ? value : [{}]
-    const onEdit = (targetKey: any, type: 'add' | 'remove') => {
-      if (type == 'add') {
-        const id = dataSource.length
-        if (copy) {
-          field.push(clone(field.value[activeKey.slice(4)]))
+export const ArrayTabs: React.FC<React.PropsWithChildren<ArrayTabsProps>> =
+  observer(
+    (props) => {
+      const { copy, ...tabsProps } = props
+      const field = useField<ArrayField>()
+      const schema = useFieldSchema()
+      const [activeKey, setActiveKey] = useState('tab-0')
+      const value = Array.isArray(field.value) ? field.value : []
+      const dataSource = value?.length ? value : [{}]
+      const onEdit = (targetKey: any, type: 'add' | 'remove') => {
+        if (type == 'add') {
+          const id = dataSource.length
+          if (copy) {
+            field.push(clone(field.value[activeKey.slice(4)]))
+            setActiveKey(`tab-${id}`)
+            return
+          }
+          if (field?.value?.length) {
+            field.push(null)
+          } else {
+            field.push(null, null)
+          }
           setActiveKey(`tab-${id}`)
-          return
+        } else if (type == 'remove') {
+          const index = Number(targetKey.match(/-(\d+)/)?.[1])
+          if (index - 1 > -1) {
+            setActiveKey(`tab-${index - 1}`)
+          }
+          field.remove(index)
         }
-        if (field?.value?.length) {
-          field.push(null)
-        } else {
-          field.push(null, null)
-        }
-        setActiveKey(`tab-${id}`)
-      } else if (type == 'remove') {
-        const index = Number(targetKey.match(/-(\d+)/)?.[1])
-        if (index - 1 > -1) {
-          setActiveKey(`tab-${index - 1}`)
-        }
-        field.remove(index)
       }
-    }
-    return (
-      <Tabs
-        {...tabsProps}
-        activeKey={activeKey}
-        onChange={(key) => {
-          setActiveKey(key)
-        }}
-        type="editable-card"
-        onEdit={onEdit}
-      >
-        {dataSource?.map((item, index) => {
-          const items = Array.isArray(schema.items)
-            ? schema.items[index]
-            : schema.items
-          const key = `tab-${index}`
-          return (
-            <Tabs.TabPane
-              key={key}
-              forceRender
-              closable={index !== 0}
-              tab={<FeedbackBadge index={index} />}
-            >
-              <RecursionField schema={items} name={index} />
-            </Tabs.TabPane>
-          )
-        })}
-      </Tabs>
-    )
-  },
-  {
-    scheduler(request) {
-      requestAnimationFrame(request)
+      return (
+        <Tabs
+          {...tabsProps}
+          activeKey={activeKey}
+          onChange={(key) => {
+            setActiveKey(key)
+          }}
+          type="editable-card"
+          onEdit={onEdit}
+        >
+          {dataSource?.map((item, index) => {
+            const items = Array.isArray(schema.items)
+              ? schema.items[index]
+              : schema.items
+            const key = `tab-${index}`
+            return (
+              <Tabs.TabPane
+                key={key}
+                forceRender
+                closable={index !== 0}
+                tab={<FeedbackBadge index={index} />}
+              >
+                <RecursionField schema={items} name={index} />
+              </Tabs.TabPane>
+            )
+          })}
+        </Tabs>
+      )
     },
-  }
-)
+    {
+      scheduler(request) {
+        requestAnimationFrame(request)
+      },
+    }
+  )
 
 export default ArrayTabs

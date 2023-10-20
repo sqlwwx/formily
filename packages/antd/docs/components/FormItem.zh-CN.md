@@ -6,9 +6,15 @@
 
 ```tsx
 import React from 'react'
-import { Input, Select, FormItem, FormButtonGroup, Submit } from '@formily/antd'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+import {
+  Input,
+  Select,
+  FormItem,
+  FormButtonGroup,
+  Submit,
+} from '@formily-x/antd'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 
 const SchemaField = createSchemaField({
   components: {
@@ -42,9 +48,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { Input, FormItem, FormButtonGroup, Submit } from '@formily/antd'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+import { Input, FormItem, FormButtonGroup, Submit } from '@formily-x/antd'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 
 const SchemaField = createSchemaField({
   components: {
@@ -86,9 +92,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { Input, FormItem, FormButtonGroup, Submit } from '@formily/antd'
-import { createForm } from '@formily/core'
-import { FormProvider, Field } from '@formily/react'
+import { Input, FormItem, FormButtonGroup, Submit } from '@formily-x/antd'
+import { createForm } from '@formily-x/core'
+import { FormProvider, Field } from '@formily-x/react'
 
 const form = createForm()
 
@@ -129,9 +135,9 @@ import {
   FormItem,
   NumberPicker,
   Switch,
-} from '@formily/antd'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+} from '@formily-x/antd'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 
 const Title = (props) => <h3>{props.text}</h3>
 
@@ -378,11 +384,11 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react'
-import { Input, FormItem, FormLayout } from '@formily/antd'
+import { Input, FormItem, FormLayout } from '@formily-x/antd'
 import { Radio, ConfigProvider } from 'antd'
 import zhCN from 'antd/es/locale/zh_CN'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 
 const SchemaField = createSchemaField({
   components: {
@@ -467,9 +473,9 @@ import {
   FormItem,
   NumberPicker,
   Switch,
-} from '@formily/antd'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+} from '@formily-x/antd'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 
 const Title = (props) => <h3>{props.text}</h3>
 
@@ -596,9 +602,9 @@ import {
   FormItem,
   NumberPicker,
   Switch,
-} from '@formily/antd'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+} from '@formily-x/antd'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 
 const Title = (props) => <h3>{props.text}</h3>
 
@@ -727,9 +733,9 @@ import {
   FormLayout,
   NumberPicker,
   Switch,
-} from '@formily/antd'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+} from '@formily-x/antd'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 import { CheckCircleFilled, LoadingOutlined } from '@ant-design/icons'
 const Title = (props) => <h3>{props.text}</h3>
 
@@ -1000,9 +1006,9 @@ import {
   FormItem,
   NumberPicker,
   Switch,
-} from '@formily/antd'
-import { createForm, onFieldChange } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+} from '@formily-x/antd'
+import { createForm, onFieldChange } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 
 const Div = (props) => <div {...props} />
 

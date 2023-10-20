@@ -71,7 +71,7 @@
 - 字段默认值(initialValue)管理
 - 值与默认值的选择合并策略
 
-表单值管理，其实就是一个对象结构的 values 属性，只是它是一个 @formily/reactive observable 属性，同时借助了 @formily/reactive 的深度 observer 能力，监听了它任意属性变化，如果发生变化，便会触发 onFormValuesChange 的生命周期钩子。
+表单值管理，其实就是一个对象结构的 values 属性，只是它是一个 @formily-x/reactive observable 属性，同时借助了 @formily-x/reactive 的深度 observer 能力，监听了它任意属性变化，如果发生变化，便会触发 onFormValuesChange 的生命周期钩子。
 
 同理，默认值管理其实也是一个对象结构的 initialValues 属性，同样会深度监听属性变化，触发 onFormInitialValues 的生命周期钩子。
 
@@ -151,4 +151,4 @@ subscribe(Dependencies, Reactions)
 - 它可以用来表达字段间关系的模型，借助路径系统，我们可以实现查找某个字段父亲，能查找父亲，也就能实现树级别的数据继承能力，同样，我们也能查找某个字段的相邻节点
 - 它可以用来实现字段数据的读写，带解构的数据读写
 
-整个路径系统，其实是基于@formily/path 的路径 DSL 来实现的，想要了解更多路径系统的内容，可以详细看看[FormPath API](/api/entry/form-path)篇
+整个路径系统，其实是基于@formily-x/path 的路径 DSL 来实现的，想要了解更多路径系统的内容，可以详细看看[FormPath API](/api/entry/form-path)篇

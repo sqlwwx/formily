@@ -36,7 +36,7 @@ interface createForm {
 ## 用例
 
 ```ts
-import { createForm } from '@formily/core'
+import { createForm } from '@formily-x/core'
 
 const form = createForm({
   initialValues: {

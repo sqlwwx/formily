@@ -1,6 +1,6 @@
 import React, { Fragment, useMemo } from 'react'
 import { Collapse, Badge } from '@alifd/next'
-import { model, markRaw } from '@formily/reactive'
+import { model, markRaw } from '@formily-x/reactive'
 import {
   CollapseProps,
   PanelProps as CollapsePanelProps,
@@ -10,9 +10,9 @@ import {
   observer,
   useFieldSchema,
   RecursionField,
-} from '@formily/react'
-import { Schema, SchemaKey } from '@formily/json-schema'
-import { toArr } from '@formily/shared'
+} from '@formily-x/react'
+import { Schema, SchemaKey } from '@formily-x/json-schema'
+import { toArr } from '@formily-x/shared'
 import cls from 'classnames'
 import { usePrefixCls } from '../__builtins__'
 

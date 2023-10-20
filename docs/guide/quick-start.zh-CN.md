@@ -4,10 +4,10 @@
 
 ### 安装内核库
 
-使用 Formily 必须要用到[@formily/core](https://core.formilyjs.org/zh-CN)，它负责管理表单的状态，表单校验，联动等等。
+使用 Formily 必须要用到[@formily-x/core](https://core.formilyjs.org/zh-CN)，它负责管理表单的状态，表单校验，联动等等。
 
 ```bash
-$ npm install --save @formily/core
+$ npm install --save @formily-x/core
 ```
 
 ### 安装 UI 桥接库
@@ -17,29 +17,29 @@ $ npm install --save @formily/core
 **React 用户**
 
 ```bash
-$ npm install --save @formily/react
+$ npm install --save @formily-x/react
 ```
 
 **Vue 用户**
 
 ```bash
-$ npm install --save @formily/vue
+$ npm install --save @formily-x/vue
 ```
 
 ### 安装组件库
 
-想要快速实现漂亮的表单，通常我们都是需要使用业界优秀的组件库的，比如[Ant Design ](https://ant.design)和 [Alibaba Fusion](https://fusion.design)，但是这些优秀的组件库，在表单的某些场景上覆盖的还是不够全面，比如详情预览态的支持，Ant Design 是不支持的，还有一些场景化的组件它也是不支持的，所以 Formily 在此之上又封装了@formily/antd 和@formily/next，保证用户开箱即用。
+想要快速实现漂亮的表单，通常我们都是需要使用业界优秀的组件库的，比如[Ant Design ](https://ant.design)和 [Alibaba Fusion](https://fusion.design)，但是这些优秀的组件库，在表单的某些场景上覆盖的还是不够全面，比如详情预览态的支持，Ant Design 是不支持的，还有一些场景化的组件它也是不支持的，所以 Formily 在此之上又封装了@formily-x/antd 和@formily-x/next，保证用户开箱即用。
 
 **Ant Design 用户**
 
 ```bash
-$ npm install --save antd moment @formily/antd
+$ npm install --save antd moment @formily-x/antd
 ```
 
 **Alibaba Fusion 用户**
 
 ```bash
-$ npm install --save @alifd/next moment @formily/next
+$ npm install --save @alifd/next moment @formily-x/next
 ```
 
 ## 导入依赖
@@ -48,9 +48,9 @@ $ npm install --save @alifd/next moment @formily/next
 
 ```ts
 import React from 'react'
-import { createForm } from '@formily/core'
-import { FormProvider, Field } from '@formily/react'
-import { FormItem, Input } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { FormProvider, Field } from '@formily-x/react'
+import { FormItem, Input } from '@formily-x/antd'
 ```
 
 ## 具体用例
@@ -60,15 +60,15 @@ import { FormItem, Input } from '@formily/antd'
  * defaultShowCode: true
  */
 import React from 'react'
-import { createForm } from '@formily/core'
-import { FormProvider, FormConsumer, Field } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import { FormProvider, FormConsumer, Field } from '@formily-x/react'
 import {
   FormItem,
   FormLayout,
   Input,
   FormButtonGroup,
   Submit,
-} from '@formily/antd'
+} from '@formily-x/antd'
 
 const form = createForm()
 

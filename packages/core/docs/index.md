@@ -34,7 +34,7 @@ footer: Open-source MIT Licensed | Copyright © 2019-present<br />Powered by sel
 ## Installation
 
 ```bash
-$ npm install --save @formily/core
+$ npm install --save @formily-x/core
 
 ```
 
@@ -42,7 +42,7 @@ $ npm install --save @formily/core
 
 > The following case is to teach you step by step to implement a form from scratch
 >
-> @formily/core brings you the following capabilities:
+> @formily-x/core brings you the following capabilities:
 >
 > 1. Responsive computing capabilities
 > 2. Verification capability, verification internationalization capability
@@ -55,8 +55,8 @@ $ npm install --save @formily/core
  * defaultShowCode: true
  */
 import React, { createContext, useMemo, useContext, useEffect } from 'react'
-import { createForm, setValidateLanguage } from '@formily/core'
-import { observer } from '@formily/reactive-react'
+import { createForm, setValidateLanguage } from '@formily-x/core'
+import { observer } from '@formily-x/reactive-react'
 
 //Create a context to facilitate Field consumption
 const FormContext = createContext()
@@ -152,7 +152,7 @@ const FormConsumer = observer((props) => {
 })
 
 /*
- * The above logic has been implemented in @formily/react or @formily/vue, and there is no need to rewrite it in actual use
+ * The above logic has been implemented in @formily-x/react or @formily-x/vue, and there is no need to rewrite it in actual use
  */
 
 //Switch the built-in check internationalization copy to English

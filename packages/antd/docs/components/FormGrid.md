@@ -6,9 +6,9 @@
 
 ```tsx
 import React from 'react'
-import { FormItem, Input, FormGrid } from '@formily/antd'
-import { FormProvider, createSchemaField } from '@formily/react'
-import { createForm } from '@formily/core'
+import { FormItem, Input, FormGrid } from '@formily-x/antd'
+import { FormProvider, createSchemaField } from '@formily-x/react'
+import { createForm } from '@formily-x/core'
 
 const SchemaField = createSchemaField({
   components: {
@@ -85,9 +85,9 @@ export default () => {
 
 ```tsx
 import React from 'react'
-import { FormItem, Input, FormGrid } from '@formily/antd'
-import { FormProvider, createSchemaField } from '@formily/react'
-import { createForm } from '@formily/core'
+import { FormItem, Input, FormGrid } from '@formily-x/antd'
+import { FormProvider, createSchemaField } from '@formily-x/react'
+import { createForm } from '@formily-x/core'
 
 const SchemaField = createSchemaField({
   components: {
@@ -169,7 +169,7 @@ export default () => {
 
 ```tsx
 import React from 'react'
-import { FormGrid } from '@formily/antd'
+import { FormGrid } from '@formily-x/antd'
 
 const { GridColumn } = FormGrid
 const Cell = ({ children }) => {
@@ -338,8 +338,8 @@ export default () => {
 
 ```tsx
 import React, { useMemo, Fragment } from 'react'
-import { createForm } from '@formily/core'
-import { createSchemaField, FormProvider, observer } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import { createSchemaField, FormProvider, observer } from '@formily-x/react'
 import {
   Form,
   Input,
@@ -350,7 +350,7 @@ import {
   Submit,
   Reset,
   FormButtonGroup,
-} from '@formily/antd'
+} from '@formily-x/antd'
 
 const useCollapseGrid = (maxRows: number) => {
   const grid = useMemo(

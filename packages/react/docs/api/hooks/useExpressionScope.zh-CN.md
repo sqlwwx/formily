@@ -20,13 +20,13 @@ interface useExpressionScope {
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
+import { createForm } from '@formily-x/core'
 import {
   FormProvider,
   createSchemaField,
   useExpressionScope,
   RecordScope,
-} from '@formily/react'
+} from '@formily-x/react'
 
 const form = createForm()
 

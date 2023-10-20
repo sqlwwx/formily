@@ -142,7 +142,7 @@
 </template>
 
 <script>
-import { FormGrid } from '@formily/element'
+import { FormGrid } from '@formily-x/element'
 
 const Cell = {
   functional: true,

@@ -6,9 +6,15 @@
 </template>
 
 <script>
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/vue'
-import { Submit, FormItem, ArrayTable, Input, Editable } from '@formily/element'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/vue'
+import {
+  Submit,
+  FormItem,
+  ArrayTable,
+  Input,
+  Editable,
+} from '@formily-x/element'
 
 const fields = createSchemaField({
   components: {

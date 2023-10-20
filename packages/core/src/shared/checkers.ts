@@ -1,4 +1,4 @@
-import { isFn } from '@formily/shared'
+import { isFn } from '@formily-x/shared'
 import { DataField } from '..'
 import {
   Form,

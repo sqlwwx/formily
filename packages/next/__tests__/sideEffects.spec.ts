@@ -15,7 +15,7 @@ test('sideEffects should be controlled manually', () => {
 })
 
 test('dist/*', () => {
-  // eg. import "@formily/next/dist/next.css"
+  // eg. import "@formily-x/next/dist/next.css"
   expect(
     SideEffectsFlagPlugin.moduleHasSideEffects('dist/next.css', 'dist/*')
   ).toBeTruthy()
@@ -35,7 +35,7 @@ test('dist/*', () => {
 
 test('esm/*.js & lib/*.js', () => {
   // expected to be truthy
-  // eg. import Formilynext from "@formily/next/esm/index"
+  // eg. import Formilynext from "@formily-x/next/esm/index"
   expect(
     SideEffectsFlagPlugin.moduleHasSideEffects('esm/index.js', 'esm/*.js')
   ).toBeTruthy()
@@ -44,7 +44,7 @@ test('esm/*.js & lib/*.js', () => {
   ).toBeTruthy()
 
   // expected to be falsy
-  // eg. import Input from "@formily/next/esm/input/index" => will be compiled to __webpack_require__("./node_modules/@formily/next/esm/input/index.js")
+  // eg. import Input from "@formily-x/next/esm/input/index" => will be compiled to __webpack_require__("./node_modules/@formily-x/next/esm/input/index.js")
   // It should be removed by webpack if not used after imported.
   expect(
     SideEffectsFlagPlugin.moduleHasSideEffects('esm/input/index.js', 'esm/*.js')
@@ -61,7 +61,7 @@ test('esm/*.js & lib/*.js', () => {
 })
 
 test('*.scss', () => {
-  //  eg. import "@formily/next/lib/input/style.scss"
+  //  eg. import "@formily-x/next/lib/input/style.scss"
   expect(
     SideEffectsFlagPlugin.moduleHasSideEffects(
       `${baseName}/lib/input/style.scss`,
@@ -71,8 +71,8 @@ test('*.scss', () => {
 })
 
 test('**/*/style.js', () => {
-  // eg. import "@formily/next/lib/input/style" will be compiled to  __webpack_require__("./node_modules/@formily/next/lib/input/style.js")
-  // so we can match the `*style.js` only, not `**/*/style*` may be cause someting mismatch like `@formily/next/lib/xxx-style/index.js`
+  // eg. import "@formily-x/next/lib/input/style" will be compiled to  __webpack_require__("./node_modules/@formily-x/next/lib/input/style.js")
+  // so we can match the `*style.js` only, not `**/*/style*` may be cause someting mismatch like `@formily-x/next/lib/xxx-style/index.js`
   const modulePathArr = [
     'lib/input/style.js',
     `${baseName}/lib/input/style.js`,

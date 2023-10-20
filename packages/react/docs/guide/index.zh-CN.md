@@ -1,18 +1,18 @@
 # 介绍
 
-@formily/react 的核心定位是将 ViewModel([@formily/core](//core.formilyjs.org))与组件实现一个状态绑定关系，它不负责管理表单数据，表单校验，它仅仅是一个渲染胶水层，但是这样一层胶水，并不脏，它会把很多脏逻辑优雅的解耦，变得可维护。
+@formily-x/react 的核心定位是将 ViewModel([@formily-x/core](//core.formilyjs.org))与组件实现一个状态绑定关系，它不负责管理表单数据，表单校验，它仅仅是一个渲染胶水层，但是这样一层胶水，并不脏，它会把很多脏逻辑优雅的解耦，变得可维护。
 
 ## 超高性能
 
-借助 [@formily/core](//core.formilyjs.org) 的响应式模型，@formily/react 无需做任何优化即可获得超高的性能优势，依赖追踪，精确更新，按需渲染，让我们的表单真正做到了只需关注业务逻辑，无需考虑性能问题。
+借助 [@formily-x/core](//core.formilyjs.org) 的响应式模型，@formily-x/react 无需做任何优化即可获得超高的性能优势，依赖追踪，精确更新，按需渲染，让我们的表单真正做到了只需关注业务逻辑，无需考虑性能问题。
 
 ## 开箱即用
 
-@formily/react 提供了一系列的 React 组件，比如 Field/ArrayField/ObjectField/VoidField，用户在使用的时候，只需要给 Field 组件传入 component 属性(支持 value/onChange 这样的双向绑定约定)即可快速接入@formily/react，接入成本极低。
+@formily-x/react 提供了一系列的 React 组件，比如 Field/ArrayField/ObjectField/VoidField，用户在使用的时候，只需要给 Field 组件传入 component 属性(支持 value/onChange 这样的双向绑定约定)即可快速接入@formily-x/react，接入成本极低。
 
 ## 协议驱动
 
-@formily/react 提供了 SchemaField 这样的协议驱动组件，同时是基于标准 JSON-Schema 的驱动，让表单开发可以变得更加动态化，可配置化，更甚，我们可以做到一份协议，让多端渲染表单。
+@formily-x/react 提供了 SchemaField 这样的协议驱动组件，同时是基于标准 JSON-Schema 的驱动，让表单开发可以变得更加动态化，可配置化，更甚，我们可以做到一份协议，让多端渲染表单。
 
 ## 场景复用
 

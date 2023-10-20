@@ -1,18 +1,18 @@
 # Introduction
 
-The core positioning of @formily/react is to realize a state binding relationship between ViewModel ([@formily/core](//core.formilyjs.org)) and components. It is not responsible for managing form data and form verification. It is only A rendering glue layer, but such a layer of glue is not dirty, it will elegantly decouple a lot of dirty logic and become maintainable.
+The core positioning of @formily-x/react is to realize a state binding relationship between ViewModel ([@formily-x/core](//core.formilyjs.org)) and components. It is not responsible for managing form data and form verification. It is only A rendering glue layer, but such a layer of glue is not dirty, it will elegantly decouple a lot of dirty logic and become maintainable.
 
 ## Ultra high performance
 
-With the responsive model of [@formily/core](//core.formilyjs.org), @formily/react can obtain super high performance advantages without any optimization, relying on tracking, accurate updates, on-demand rendering, let us The form of really does only need to focus on business logic, without considering performance issues.
+With the responsive model of [@formily-x/core](//core.formilyjs.org), @formily-x/react can obtain super high performance advantages without any optimization, relying on tracking, accurate updates, on-demand rendering, let us The form of really does only need to focus on business logic, without considering performance issues.
 
 ## Out of the box
 
-@formily/react provides a series of React components, such as Field/ArrayField/ObjectField/VoidField. When using it, users only need to pass the component property to the Field component (supporting two-way binding conventions such as value/onChange). Quick access to @formily/react, the access cost is extremely low.
+@formily-x/react provides a series of React components, such as Field/ArrayField/ObjectField/VoidField. When using it, users only need to pass the component property to the Field component (supporting two-way binding conventions such as value/onChange). Quick access to @formily-x/react, the access cost is extremely low.
 
 ## JSON Schema Driver
 
-@formily/react provides protocol-driven components such as SchemaField. It is also driven by the standard JSON-Schema, so that form development can become more dynamic and configurable. What's more, we can achieve a protocol that allows multiple terminals Render the form.
+@formily-x/react provides protocol-driven components such as SchemaField. It is also driven by the standard JSON-Schema, so that form development can become more dynamic and configurable. What's more, we can achieve a protocol that allows multiple terminals Render the form.
 
 ## Scene Reuse
 

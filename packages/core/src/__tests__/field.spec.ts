@@ -1,4 +1,4 @@
-import { autorun, batch, observable } from '@formily/reactive'
+import { autorun, batch, observable } from '@formily-x/reactive'
 import { createForm, onFieldReact, isField } from '../'
 import { DataField } from '../types'
 import { attach, sleep } from './shared'

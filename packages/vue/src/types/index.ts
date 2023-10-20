@@ -10,9 +10,9 @@ import {
   FormPatternTypes,
   FieldDisplayTypes,
   FieldValidator,
-} from '@formily/core'
-import type { FormPathPattern } from '@formily/shared'
-import type { ISchema, Schema, SchemaKey } from '@formily/json-schema'
+} from '@formily-x/core'
+import type { FormPathPattern } from '@formily-x/shared'
+import type { ISchema, Schema, SchemaKey } from '@formily-x/json-schema'
 
 class Helper<Props> {
   Return = VueDemi.defineComponent({} as { props: Record<keyof Props, any> })

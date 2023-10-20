@@ -35,10 +35,10 @@
 </template>
 
 <script>
-import { createForm, onFieldReact } from '@formily/core'
-import { Field } from '@formily/vue'
-import { action } from '@formily/reactive'
-import { Form, FormItem, Select, Submit, Reset } from '@formily/element'
+import { createForm, onFieldReact } from '@formily-x/core'
+import { Field } from '@formily-x/vue'
+import { action } from '@formily-x/reactive'
+import { Form, FormItem, Select, Submit, Reset } from '@formily-x/element'
 
 const useAsyncDataSource = (pattern, service) => {
   onFieldReact(pattern, (field) => {

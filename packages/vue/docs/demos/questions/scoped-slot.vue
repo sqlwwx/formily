@@ -5,9 +5,9 @@
 </template>
 
 <script>
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/vue'
-import { observer } from '@formily/reactive-vue'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/vue'
+import { observer } from '@formily-x/reactive-vue'
 
 // 带有作用域插槽的普通组件
 const TextPreviewer = {

@@ -5,9 +5,9 @@ import {
   onFormSubmitSuccess,
   IFormProps,
   Form,
-} from '@formily/core'
-import { toJS } from '@formily/reactive'
-import { FormProvider, observer, Observer, ReactFC } from '@formily/react'
+} from '@formily-x/core'
+import { toJS } from '@formily-x/reactive'
+import { FormProvider, observer, Observer, ReactFC } from '@formily-x/react'
 import {
   isNum,
   isStr,
@@ -15,7 +15,7 @@ import {
   isFn,
   applyMiddleware,
   IMiddleware,
-} from '@formily/shared'
+} from '@formily-x/shared'
 import { ConfigProvider, Drawer } from '@alifd/next'
 import { DrawerProps } from '@alifd/next/lib/drawer'
 import {

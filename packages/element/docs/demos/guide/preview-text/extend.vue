@@ -68,15 +68,15 @@
 
 <script>
 import { h } from 'vue-demi'
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/vue'
+import { createForm } from '@formily-x/core'
+import { createSchemaField } from '@formily-x/vue'
 import {
   Form,
   FormItem,
   Input,
   PreviewText,
   FormButtonGroup,
-} from '@formily/element'
+} from '@formily-x/element'
 import { Button } from 'element-ui'
 
 const fields = createSchemaField({

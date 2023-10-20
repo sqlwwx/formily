@@ -94,8 +94,8 @@
 </template>
 
 <script>
-import { createForm } from '@formily/core'
-import { FormProvider, Field, VoidField } from '@formily/vue'
+import { createForm } from '@formily-x/core'
+import { FormProvider, Field, VoidField } from '@formily-x/vue'
 import {
   FormLayout,
   FormItem,
@@ -104,7 +104,7 @@ import {
   Submit,
   Space,
   FormButtonGroup,
-} from '@formily/element'
+} from '@formily-x/element'
 
 const form = createForm()
 

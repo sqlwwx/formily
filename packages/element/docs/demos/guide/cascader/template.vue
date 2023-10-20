@@ -20,10 +20,10 @@
 </template>
 
 <script>
-import { createForm, onFieldReact } from '@formily/core'
-import { Field } from '@formily/vue'
-import { Form, FormItem, Cascader, Submit } from '@formily/element'
-import { action } from '@formily/reactive'
+import { createForm, onFieldReact } from '@formily-x/core'
+import { Field } from '@formily-x/vue'
+import { Form, FormItem, Cascader, Submit } from '@formily-x/element'
+import { action } from '@formily-x/reactive'
 import axios from 'axios'
 
 const transformAddress = (data = {}) => {

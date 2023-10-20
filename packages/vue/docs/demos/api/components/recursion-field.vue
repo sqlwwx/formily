@@ -22,8 +22,8 @@
 
 <script>
 import { Input } from 'ant-design-vue'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField, RecursionField } from '@formily/vue'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField, RecursionField } from '@formily-x/vue'
 import 'ant-design-vue/dist/antd.css'
 
 // functional component in vue2

@@ -1,8 +1,8 @@
 import React, { Fragment, useRef, useLayoutEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
-import { createForm, IFormProps, Form } from '@formily/core'
-import { toJS } from '@formily/reactive'
-import { FormProvider, Observer, observer, ReactFC } from '@formily/react'
+import { createForm, IFormProps, Form } from '@formily-x/core'
+import { toJS } from '@formily-x/reactive'
+import { FormProvider, Observer, observer, ReactFC } from '@formily-x/react'
 import {
   isNum,
   isStr,
@@ -10,7 +10,7 @@ import {
   isFn,
   applyMiddleware,
   IMiddleware,
-} from '@formily/shared'
+} from '@formily-x/shared'
 import { Modal, ModalProps } from 'antd'
 import {
   usePrefixCls,

@@ -11,8 +11,8 @@
 
 <script>
 import { Input } from 'ant-design-vue'
-import { createForm } from '@formily/core'
-import { FormProvider, Field, FormConsumer } from '@formily/vue'
+import { createForm } from '@formily-x/core'
+import { FormProvider, Field, FormConsumer } from '@formily-x/vue'
 import 'ant-design-vue/dist/antd.css'
 
 export default {

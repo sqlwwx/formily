@@ -14,8 +14,8 @@ import {
   Reset,
   FormButtonGroup,
   FormLayout,
-} from '@formily/next'
-import { createSchemaField } from '@formily/react'
+} from '@formily-x/next'
+import { createSchemaField } from '@formily-x/react'
 import { Button } from '@alifd/next'
 
 const SchemaField = createSchemaField({
@@ -105,8 +105,8 @@ import {
   Reset,
   FormButtonGroup,
   FormLayout,
-} from '@formily/next'
-import { createSchemaField } from '@formily/react'
+} from '@formily-x/next'
+import { createSchemaField } from '@formily-x/react'
 import { Button } from '@alifd/next'
 
 const SchemaField = createSchemaField({
@@ -201,8 +201,8 @@ import {
   Reset,
   FormButtonGroup,
   FormLayout,
-} from '@formily/next'
-import { Field } from '@formily/react'
+} from '@formily-x/next'
+import { Field } from '@formily-x/react'
 import { Button } from '@alifd/next'
 
 export default () => {
@@ -283,8 +283,8 @@ import {
   Reset,
   FormButtonGroup,
   FormLayout,
-} from '@formily/next'
-import { Field } from '@formily/react'
+} from '@formily-x/next'
+import { Field } from '@formily-x/react'
 import { Button, ConfigProvider } from '@alifd/next'
 
 export default () => {
@@ -364,7 +364,7 @@ export default () => {
 ### FormDrawer
 
 ```ts pure
-import { IFormProps, Form } from '@formily/core'
+import { IFormProps, Form } from '@formily-x/core'
 
 type FormDrawerRenderer =
   | React.ReactElement

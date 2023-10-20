@@ -2,7 +2,7 @@
 
 ## Introduction
 
-@formily/antd is a professional component library for form scenarios based on Ant Design encapsulation. It has the following characteristics:
+@formily-x/antd is a professional component library for form scenarios based on Ant Design encapsulation. It has the following characteristics:
 
 - Only Formily 2.x is supported
   - Most components are not backward compatible
@@ -61,7 +61,7 @@
 
 ```bash
 $ npm install --save antd moment
-$ npm install --save @formily/core @formily/react @formily/antd
+$ npm install --save @formily-x/core @formily-x/react @formily-x/antd
 
 ```
 

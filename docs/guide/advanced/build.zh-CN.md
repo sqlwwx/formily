@@ -28,8 +28,8 @@ export default {
     ],
     [
       'babel-plugin-import',
-      { libraryName: '@formily/antd', libraryDirectory: 'esm', style: true },
-      '@formily/antd',
+      { libraryName: '@formily-x/antd', libraryDirectory: 'esm', style: true },
+      '@formily-x/antd',
     ],
   ],
 }
@@ -99,8 +99,8 @@ yarn add babel-plugin-import --dev
 +     libraryDirectory: 'es',
 +     style: true
 +   }),
-+   fixBabelImports('@formily/antd', {
-+     libraryName: '@formily/antd',
++   fixBabelImports('@formily-x/antd', {
++     libraryName: '@formily-x/antd',
 +     libraryDirectory: 'esm',
 +     style: true
 +   }),
@@ -138,11 +138,11 @@ yarn add babel-plugin-import --dev
     [
       "import",
       {
-        "libraryName": "@formily/antd",
+        "libraryName": "@formily-x/antd",
         "libraryDirectory": "esm",
         "style": true
       },
-      "@formily/antd"
+      "@formily-x/antd"
     ]
   ]
 }

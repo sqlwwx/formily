@@ -6,7 +6,7 @@ order: 0
 
 ## Description
 
-As @formily/core's [createField](https://core.formilyjs.org/api/models/form#createfield) React implementation, it is a bridge component specifically used to bind ViewModel and input controls, the Field component Property reference [IFieldFactoryProps](https://core.formilyjs.org/api/models/form#ifieldfactoryprops)
+As @formily-x/core's [createField](https://core.formilyjs.org/api/models/form#createfield) React implementation, it is a bridge component specifically used to bind ViewModel and input controls, the Field component Property reference [IFieldFactoryProps](https://core.formilyjs.org/api/models/form#ifieldfactoryprops)
 
 <Alert>
 When we use the Field component, we must remember to pass the name attribute.
@@ -22,8 +22,8 @@ type Field = React.FC<React.PropsWithChildren<IFieldFactoryProps>>
 
 ```tsx
 import React from 'react'
-import { createForm } from '@formily/core'
-import { FormProvider, Field } from '@formily/react'
+import { createForm } from '@formily-x/core'
+import { FormProvider, Field } from '@formily-x/react'
 import { Input } from 'antd'
 
 const form = createForm()

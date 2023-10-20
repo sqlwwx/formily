@@ -67,8 +67,8 @@
 </template>
 
 <script>
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/vue'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/vue'
 import {
   FormButtonGroup,
   FormItem,
@@ -76,7 +76,7 @@ import {
   Input,
   DatePicker,
   Editable,
-} from '@formily/element'
+} from '@formily-x/element'
 import { Button } from 'element-ui'
 
 const SchemaField = createSchemaField({

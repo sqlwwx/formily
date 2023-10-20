@@ -7,8 +7,8 @@ import {
   SchemaKey,
   ISchemaTransformerOptions,
 } from './types'
-import { IFieldFactoryProps } from '@formily/core'
-import { map, each, isFn, instOf, FormPath, isStr } from '@formily/shared'
+import { IFieldFactoryProps } from '@formily-x/core'
+import { map, each, isFn, instOf, FormPath, isStr } from '@formily-x/shared'
 import { compile, silent, shallowCompile, registerCompiler } from './compiler'
 import { transformFieldProps } from './transformer'
 import {

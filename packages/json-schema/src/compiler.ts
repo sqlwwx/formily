@@ -5,9 +5,9 @@ import {
   isStr,
   reduce,
   FormPath,
-} from '@formily/shared'
-import { IGeneralFieldState } from '@formily/core'
-import { untracked, hasCollected } from '@formily/reactive'
+} from '@formily-x/shared'
+import { IGeneralFieldState } from '@formily-x/core'
+import { untracked, hasCollected } from '@formily-x/reactive'
 import {
   traverse,
   traverseSchema,

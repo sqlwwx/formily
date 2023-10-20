@@ -6,9 +6,9 @@
 
 ```tsx
 import React from 'react'
-import { TreeSelect, FormItem, FormButtonGroup, Submit } from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+import { TreeSelect, FormItem, FormButtonGroup, Submit } from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 
 const SchemaField = createSchemaField({
   components: {
@@ -95,10 +95,15 @@ import {
   FormItem,
   FormButtonGroup,
   Submit,
-} from '@formily/next'
-import { createForm, onFieldReact, FormPathPattern, Field } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
-import { action } from '@formily/reactive'
+} from '@formily-x/next'
+import {
+  createForm,
+  onFieldReact,
+  FormPathPattern,
+  Field,
+} from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
+import { action } from '@formily-x/reactive'
 
 const SchemaField = createSchemaField({
   components: {
@@ -268,9 +273,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { TreeSelect, FormItem, FormButtonGroup, Submit } from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
+import { TreeSelect, FormItem, FormButtonGroup, Submit } from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
 
 const SchemaField = createSchemaField({
   components: {
@@ -362,10 +367,10 @@ import {
   FormItem,
   FormButtonGroup,
   Submit,
-} from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/react'
-import { action } from '@formily/reactive'
+} from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, createSchemaField } from '@formily-x/react'
+import { action } from '@formily-x/reactive'
 
 const SchemaField = createSchemaField({
   components: {
@@ -534,9 +539,9 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { TreeSelect, FormItem, FormButtonGroup, Submit } from '@formily/next'
-import { createForm } from '@formily/core'
-import { FormProvider, Field } from '@formily/react'
+import { TreeSelect, FormItem, FormButtonGroup, Submit } from '@formily-x/next'
+import { createForm } from '@formily-x/core'
+import { FormProvider, Field } from '@formily-x/react'
 
 const form = createForm()
 
@@ -616,15 +621,15 @@ import {
   FormItem,
   FormButtonGroup,
   Submit,
-} from '@formily/next'
+} from '@formily-x/next'
 import {
   createForm,
   onFieldReact,
   FormPathPattern,
   FieldType,
-} from '@formily/core'
-import { FormProvider, Field } from '@formily/react'
-import { action } from '@formily/reactive'
+} from '@formily-x/core'
+import { FormProvider, Field } from '@formily-x/react'
+import { action } from '@formily-x/reactive'
 
 const useAsyncDataSource = (
   pattern: FormPathPattern,

@@ -1,13 +1,13 @@
 import React, { useRef } from 'react'
-import { ArrayField } from '@formily/core'
+import { ArrayField } from '@formily-x/core'
 import {
   useField,
   observer,
   useFieldSchema,
   RecursionField,
-} from '@formily/react'
+} from '@formily-x/react'
 import cls from 'classnames'
-import { ISchema } from '@formily/json-schema'
+import { ISchema } from '@formily-x/json-schema'
 import {
   usePrefixCls,
   SortableContainer,

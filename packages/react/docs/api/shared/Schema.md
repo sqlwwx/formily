@@ -2,13 +2,13 @@
 
 ## Description
 
-The core part of the @formily/react protocol driver. Schema is a general class in which users can use it by themselves. At the same time, both SchemaField and RecursionField rely on it. It has several core capabilities:
+The core part of the @formily-x/react protocol driver. Schema is a general class in which users can use it by themselves. At the same time, both SchemaField and RecursionField rely on it. It has several core capabilities:
 
 - Ability to parse json-schema
 - The ability to convert json-schema to Field Model
 - The ability to compile json-schema expressions
 
-You can export the Schema Class from @formily/react, but if you don’t want to use @formily/react, you can rely on the @formily/json-schema package alone
+You can export the Schema Class from @formily-x/react, but if you don’t want to use @formily-x/react, you can rely on the @formily-x/json-schema package alone
 
 ## Constructor
 
@@ -331,7 +331,7 @@ Convert the current Schema object into a Formily field model attribute, refer to
 #### Signature
 
 ```ts
-import { IFieldFactoryProps } from '@formily/core'
+import { IFieldFactoryProps } from '@formily-x/core'
 
 interface toFieldProps {
   (): IFieldFactoryProps
@@ -459,7 +459,7 @@ interface registerVoidComponents {
 #### Example
 
 ```ts
-import { Schema } from '@formily/react'
+import { Schema } from '@formily-x/react'
 
 Schema.registerVoidComponents(['card', 'tab', 'step'])
 ```
@@ -485,7 +485,7 @@ interface registerTypeDefaultComponents {
 #### Example
 
 ```ts
-import { Schema } from '@formily/react'
+import { Schema } from '@formily-x/react'
 
 Schema.registerTypeDefaultComponents({
   string: 'Input',
@@ -517,7 +517,7 @@ interface registerPolyfills {
 #### Example
 
 ```ts
-import { Schema } from '@formily/react'
+import { Schema } from '@formily-x/react'
 
 Schema.registerPolyfills('1.0', (schema) => {
   schema['x-decorator'] = 'FormItem'
@@ -550,7 +550,7 @@ interface enablePolyfills {
 #### Example
 
 ```ts
-import { Schema } from '@formily/react'
+import { Schema } from '@formily-x/react'
 
 Schema.enablePolyfills(['1.0'])
 ```
@@ -636,7 +636,7 @@ FormPathPattern path syntax documentation is [here](https://core.formilyjs.org/a
 #### Signature
 
 ```ts
-import { IGeneralFieldState } from '@formily/core'
+import { IGeneralFieldState } from '@formily-x/core'
 
 type SchemaReactionEffect =
   | 'onFieldInit'

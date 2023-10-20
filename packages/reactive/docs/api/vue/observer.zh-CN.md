@@ -41,8 +41,8 @@ interface observer<T extends VueComponent> {
 </template>
 
 <script>
-  import { observable } from '@formily/reactive'
-  import { observer } from '@formily/reactive-vue'
+  import { observable } from '@formily-x/reactive'
+  import { observer } from '@formily-x/reactive-vue'
 
   export default observer({
     data() {

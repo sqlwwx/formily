@@ -39,8 +39,8 @@ function observer<P, Options extends IObserverOptions>(
  * defaultShowCode: true
  */
 import React from 'react'
-import { observable } from '@formily/reactive'
-import { observer } from '@formily/reactive-react'
+import { observable } from '@formily-x/reactive'
+import { observer } from '@formily-x/reactive-react'
 
 const obs = observable({
   value: 'Hello world',
@@ -98,8 +98,8 @@ type Observer = React.FC<React.PropsWithChildren<IObserverProps>>
  * defaultShowCode: true
  */
 import React from 'react'
-import { observable } from '@formily/reactive'
-import { Observer } from '@formily/react'
+import { observable } from '@formily-x/reactive'
+import { Observer } from '@formily-x/react'
 
 const obs = observable({
   value: 'Hello world',

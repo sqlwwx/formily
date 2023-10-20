@@ -1,5 +1,5 @@
 {
-  "name": "@formily/core",
+  "name": "@formily-x/core",
   "version": "2.2.30",
   "license": "MIT",
   "main": "lib",
@@ -32,9 +32,9 @@
     "dumi": "^1.1.0-rc.8"
   },
   "dependencies": {
-    "@formily/reactive": "2.2.30",
-    "@formily/shared": "2.2.30",
-    "@formily/validator": "2.2.30"
+    "@formily-x/reactive": "2.2.30",
+    "@formily-x/shared": "2.2.30",
+    "@formily-x/validator": "2.2.30"
   },
   "publishConfig": {
     "access": "public"

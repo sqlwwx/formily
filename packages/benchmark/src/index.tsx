@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from 'react'
 import ReactDOM from 'react-dom'
-import { createForm } from '@formily/core'
-import { Field, createSchemaField } from '@formily/react'
-import { Input, Form, FormItem } from '@formily/antd'
+import { createForm } from '@formily-x/core'
+import { Field, createSchemaField } from '@formily-x/react'
+import { Input, Form, FormItem } from '@formily-x/antd'
 import { Form as AntdForm, Input as AntdInput } from 'antd'
 const SchemaField = createSchemaField({
   components: {

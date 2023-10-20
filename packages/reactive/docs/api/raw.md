@@ -19,7 +19,7 @@ interface raw<T extends object> {
 ## Example
 
 ```ts
-import { raw, observable } from '@formily/reactive'
+import { raw, observable } from '@formily-x/reactive'
 
 const obs = observable({})
 

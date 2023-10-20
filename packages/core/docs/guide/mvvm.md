@@ -10,7 +10,7 @@ To explain, the View (view layer) is responsible for maintaining the UI structur
 
 So, what should the Formily solution be positioned in MVVM?
 
-Obviously, Formily provides two tiers of View and ViewModel capabilities. View is @formily/react @formily/vue, which is specifically used to bridge communication with @formily/core. Therefore, @formily/core is positioned at the ViewModel layer. ,
+Obviously, Formily provides two tiers of View and ViewModel capabilities. View is @formily-x/react @formily-x/vue, which is specifically used to bridge communication with @formily-x/core. Therefore, @formily-x/core is positioned at the ViewModel layer. ,
 
 Where is the Model layer?
 
